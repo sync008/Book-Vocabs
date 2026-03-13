@@ -1457,7 +1457,7 @@ Object.assign(flashcardData, {
         { korean: "출하하다", romanization: "chulhahada", meaning: "to ship" },
         { korean: "납품하다", romanization: "napumhada", meaning: "to deliver" },
         { korean: "지게차", romanization: "jigecha", meaning: "forklift" },
-        { korean: "핸드 파렛트(핸드 팔레트)", romanization: "haendeu paretteu(haendeu palleteu)", meaning: "hand pallet" },
+        { korean: "핸드 파렛트 / 팔레트", romanization: "haendeu paretteu / palleteu)", meaning: "hand pallet" },
         { korean: "핸드 카트", romanization: "haendeu kateu", meaning: "hand trolley" },
         { korean: "대차", romanization: "daecha", meaning: "dolly" },
         { korean: "출하량", romanization: "chulharyang", meaning: "shipment volume" },
