@@ -139,6 +139,7 @@ function createCategoryButtons() {
 
         categoryButtonsDiv.appendChild(button);
     }
+    renderHardWords(); // Show hard words on load
 }
 
 // TOGGLE CATEGORY SELECTION IN MULTI-SELECT MODE
@@ -343,7 +344,8 @@ function displayCard() {
         if (card.sourceCategory) {
             sourceCategoryHTML = `<div class="source-category">From: ${card.sourceCategory}</div>`;
         }
-        
+
+        // Replace the cardContent.innerHTML in the isFlipped branch with:
         cardContent.innerHTML = `
             <div class="card-back">
                 ${sourceCategoryHTML}
@@ -351,8 +353,26 @@ function displayCard() {
                 <div class="romanization">${card.romanization}</div>
                 <div class="meaning">${card.meaning}</div>
                 ${breakdownHTML}
+                <button class="mark-hard-btn" id="mark-hard-btn">🔴 Mark as Hard</button>
             </div>
         `;
+
+        // Attach the event right after setting innerHTML
+        const markHardBtn = document.getElementById('mark-hard-btn');
+        if (markHardBtn) {
+            const hardWords = getHardWords();
+            const alreadyHard = hardWords.some(w => w.korean === spokenText || w.korean === card.korean);
+            if (alreadyHard) {
+                markHardBtn.textContent = '✓ Marked as Hard';
+                markHardBtn.disabled = true;
+            }
+            markHardBtn.addEventListener('click', function(e) {
+                e.stopPropagation(); // Don't flip the card
+                markAsHard(card);
+                this.textContent = '✓ Marked as Hard';
+                this.disabled = true;
+            });
+        }
         
         // Speak the Korean text
         speakKorean(spokenText);
@@ -378,6 +398,91 @@ function speakKorean(text) {
     
     window.speechSynthesis.speak(utterance);
 }
+
+// HARD WORDS SYSTEM
+function getHardWords() {
+    const stored = localStorage.getItem('hardWords');
+    return stored ? JSON.parse(stored) : [];
+}
+
+function saveHardWords(words) {
+    localStorage.setItem('hardWords', JSON.stringify(words));
+}
+
+function markAsHard(card) {
+    const hardWords = getHardWords();
+    // Avoid duplicates based on korean text
+    const alreadyAdded = hardWords.some(w => w.korean === card.korean);
+    if (!alreadyAdded) {
+        // Store only the core fields
+        hardWords.push({
+            korean: card.korean,
+            romanization: card.romanization,
+            meaning: card.meaning
+        });
+        saveHardWords(hardWords);
+    }
+    renderHardWords();
+}
+
+function removeFromHard(korean) {
+    let hardWords = getHardWords();
+    hardWords = hardWords.filter(w => w.korean !== korean);
+    saveHardWords(hardWords);
+    renderHardWords();
+}
+
+function renderHardWords() {
+    const hardWords = getHardWords();
+    const container = document.getElementById('hard-words-section');
+    const list = document.getElementById('hard-words-list');
+    const copyBtn = document.getElementById('copy-hard-words-btn');
+    const clearBtn = document.getElementById('clear-hard-words-btn');
+
+    if (hardWords.length === 0) {
+        container.classList.add('hidden');
+        return;
+    }
+
+    container.classList.remove('hidden');
+    list.innerHTML = '';
+
+    hardWords.forEach(word => {
+        const item = document.createElement('div');
+        item.className = 'hard-word-item';
+        item.innerHTML = `
+            <span class="hard-word-korean">${word.korean}</span>
+            <span class="hard-word-details">${word.romanization} — ${word.meaning}</span>
+            <button class="remove-hard-btn" data-korean="${word.korean}" title="Remove">✕</button>
+        `;
+        item.querySelector('.remove-hard-btn').addEventListener('click', function() {
+            removeFromHard(this.dataset.korean);
+        });
+        list.appendChild(item);
+    });
+
+    // Build the copyable JS format
+    const jsLines = hardWords.map(w =>
+        `        { korean: "${w.korean}", romanization: "${w.romanization}", meaning: "${w.meaning}" },`
+    ).join('\n');
+    document.getElementById('hard-words-code').textContent = jsLines;
+}
+
+// Copy to clipboard
+document.getElementById('copy-hard-words-btn').addEventListener('click', function() {
+    const code = document.getElementById('hard-words-code').textContent;
+    navigator.clipboard.writeText(code).then(() => {
+        this.textContent = '✓ Copied!';
+        setTimeout(() => this.textContent = '📋 Copy JS', 2000);
+    });
+});
+
+document.getElementById('clear-hard-words-btn').addEventListener('click', function() {
+    if (confirm('Clear all hard words?')) {
+        localStorage.removeItem('hardWords');
+        renderHardWords();
+    }
+});
 
 // STEP 4: UPDATE NAVIGATION BUTTONS
 function updateNavigationButtons() {

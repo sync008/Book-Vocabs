@@ -744,3 +744,174 @@ body.dark-mode #dark-mode-toggle:hover {
         padding: 6px 12px;
     }
 }
+
+/* Hard Words Section */
+#hard-words-section {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+#hard-words-section h2 {
+    color: #e53e3e;
+    margin-bottom: 8px;
+    font-size: 1.5em;
+}
+
+.hard-words-subtitle {
+    color: #666;
+    font-size: 0.95em;
+    margin-bottom: 20px;
+}
+
+.hard-word-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 14px;
+    border-radius: 8px;
+    background: #fff5f5;
+    border-left: 4px solid #e53e3e;
+    margin-bottom: 8px;
+}
+
+.hard-word-korean {
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #333;
+    min-width: 60px;
+}
+
+.hard-word-details {
+    flex: 1;
+    font-size: 0.95em;
+    color: #555;
+}
+
+.remove-hard-btn {
+    background: none;
+    border: none;
+    color: #999;
+    cursor: pointer;
+    font-size: 1em;
+    padding: 4px 8px;
+    border-radius: 4px;
+    transition: color 0.2s, background 0.2s;
+}
+
+.remove-hard-btn:hover {
+    color: #e53e3e;
+    background: #ffe4e4;
+}
+
+.hard-words-actions {
+    display: flex;
+    gap: 12px;
+    margin: 20px 0 16px;
+}
+
+.clear-btn {
+    background: white;
+    color: #e53e3e;
+    border: 2px solid #e53e3e;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 1em;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.2s;
+}
+
+.clear-btn:hover {
+    background: #e53e3e;
+    color: white;
+}
+
+.hard-words-code {
+    background: #1a1a2e;
+    color: #a8d8a8;
+    padding: 16px;
+    border-radius: 10px;
+    font-size: 0.85em;
+    font-family: monospace;
+    overflow-x: auto;
+    white-space: pre;
+    line-height: 1.6;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+/* Mark as Hard button on flashcard */
+.mark-hard-btn {
+    margin-top: 24px;
+    background: white;
+    color: #e53e3e;
+    border: 2px solid #e53e3e;
+    padding: 10px 22px;
+    border-radius: 8px;
+    font-size: 0.95em;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.2s;
+}
+
+.mark-hard-btn:hover:not(:disabled) {
+    background: #e53e3e;
+    color: white;
+}
+
+.mark-hard-btn:disabled {
+    opacity: 0.6;
+    cursor: default;
+    border-color: #999;
+    color: #999;
+}
+
+/* Dark mode for hard words */
+body.dark-mode #hard-words-section {
+    background: #2d2d44;
+}
+
+body.dark-mode #hard-words-section h2 {
+    color: #fc8181;
+}
+
+body.dark-mode .hard-words-subtitle {
+    color: #b0b0b0;
+}
+
+body.dark-mode .hard-word-item {
+    background: #3a1e1e;
+    border-left-color: #fc8181;
+}
+
+body.dark-mode .hard-word-korean {
+    color: #e0e0e0;
+}
+
+body.dark-mode .hard-word-details {
+    color: #b0b0b0;
+}
+
+body.dark-mode .clear-btn {
+    background: #2d2d44;
+    color: #fc8181;
+    border-color: #fc8181;
+}
+
+body.dark-mode .clear-btn:hover {
+    background: #fc8181;
+    color: #1a1a2e;
+}
+
+body.dark-mode .mark-hard-btn {
+    background: #2d2d44;
+    color: #fc8181;
+    border-color: #fc8181;
+}
+
+body.dark-mode .mark-hard-btn:hover:not(:disabled) {
+    background: #fc8181;
+    color: #1a1a2e;
+}

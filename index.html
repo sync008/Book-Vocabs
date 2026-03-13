@@ -47,6 +47,21 @@
             <button id="shuffle-btn">🔀 Shuffle</button>
             <button id="back-to-categories">← Back to Categories</button>
         </div>
+
+        <!-- Hard Words Section -->
+        <div id="hard-words-section" class="hidden" style="margin-top: 40px;">
+            <div id="hard-words-container">
+                <h2>🔴 Hard Words</h2>
+                <p class="hard-words-subtitle">Words you've marked as hard. Copy the JS below to paste into your content file.</p>
+                <div id="hard-words-list"></div>
+                <div class="hard-words-actions">
+                    <button id="copy-hard-words-btn" class="primary-btn">📋 Copy JS</button>
+                    <button id="clear-hard-words-btn" class="clear-btn">🗑 Clear All</button>
+                </div>
+                <pre id="hard-words-code" class="hard-words-code"></pre>
+            </div>
+        </div>
+
     </div>
     <script src="content.js"></script> 
     <script src="script.js"></script>

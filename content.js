@@ -2,6 +2,10 @@ if (typeof flashcardData === 'undefined') var flashcardData = {};
 
 Object.assign(flashcardData, {
     
+    "Hard Words": [
+        
+    ],
+
     "Chapter 1.1": [
         { korean: "한국", romanization: "Hanguk", meaning: "Republic of Korea" },
         { korean: "네팔", romanization: "Nepal", meaning: "Nepal" },
