@@ -256,7 +256,7 @@ Object.assign(flashcardData, {
         { korean: "휴게실", romanization: "hyugesil", meaning: "Lounge" },
         { korean: "매점", romanization: "maejeom", meaning: "Snack bar" },
         { korean: "공원", romanization: "gongwon", meaning: "Park" },
-        { korean: "사다", romanization: "sada", meaning: "To buy" }
+        { korean: "사다 / 구매하다", romanization: "sada / gumaehada", meaning: "To buy" }
     ],
 
     "Chapter 7": [
@@ -444,7 +444,7 @@ Object.assign(flashcardData, {
         { korean: "냄비", romanization: "naembi", meaning: "Pot" },
         { korean: "밥을 하다/짓다", romanization: "babeul hada/jitda", meaning: "To cook rice" },
         { korean: "음식을 만들다", romanization: "eumsigeul mandeulda", meaning: "To make food" },
-        { korean: "설거지를 하다", romanization: "seolgeojijeul hada", meaning: "To wash the dishes" },
+        { korean: "설거지를 하다", romanization: "seolgeojireul hada", meaning: "To wash the dishes" },
         { korean: "전기밥솥", romanization: "jeongibapsot", meaning: "Electric rice cooker" },
         { korean: "세탁 세제", romanization: "setak seje", meaning: "Laundry detergent" },
         { korean: "주방 세제", romanization: "jubang seje", meaning: "Dish-soap" },
@@ -2614,11 +2614,9 @@ Object.assign(flashcardData, {
         // Question 4
         { korean: "알뜰하다", romanization: "altteulhada", meaning: "affordable/economical/thrifty" },
         // Question 8
-        { korean: "성별", romanization: "seongbyeol", meaning: "gender" },
         { korean: "등록증", romanization: "deungrokjeung", meaning: "Registration card" },
         // Question 10
         { korean: "판매하다", romanization: "panmaehada", meaning: "to sell" },
-        { korean: "구매하다", romanization: "gumaehada", meaning: "To buy" },
         // Question 19
         { korean: "단어", romanization: "daneo", meaning: "word" },
         { korean: "직장생활", romanization: "jikjangsaenghwal", meaning: "work life/office life" },
@@ -2630,8 +2628,6 @@ Object.assign(flashcardData, {
         { korean: "하늘", romanization: "haneul", meaning: "Sky" },
         { korean: "생활하다", romanization: "saenghwalhada", meaning: "to live" },
         { korean: "그런데", romanization: "geureonde", meaning: "however/but" },
-        // Question 6
-        { korean: "입다", romanization: "ipda", meaning: "To wear" },
         // Question 18
         { korean: "문화", romanization: "munhwa", meaning: "culture" },
         { korean: "휴식", romanization: "hyusik", meaning: "rest / break" },
@@ -2639,10 +2635,6 @@ Object.assign(flashcardData, {
         { korean: "좌식 문화", romanization: "jwasik munhwa", meaning: "floor-sitting culture" },
         { korean: "식사 예절", romanization: "siksa yejeol", meaning: "dining etiquette" },
         { korean: "일상 생활", romanization: "ilsang saenghwal", meaning: "Daily Life" },
-    ],
-    
-    "Mistakes Chapter 5-6": [
-        { korean: "", romanization: "None", meaning: "None" },
     ],
 
     "Mistakes Chapter 9-10": [
@@ -2658,9 +2650,7 @@ Object.assign(flashcardData, {
         { korean: "장점", romanization: "jangjeom", meaning: "Advantage / Strong point" },
         { korean: "직접", romanization: "jikjeop", meaning: "Directly / In person" },
         { korean: "언제든지 / 언제나", romanization: "eonjedeunji / eonjena", meaning: "Anytime / Whenever" },
-        { korean: "필요하다", romanization: "piryohada", meaning: "To be necessary / To need" },
         // Question 10
-        { korean: "행사", romanization: "haengsa", meaning: "Event / function / occasion" },
         { korean: "운영하다", romanization: "unyeonghada", meaning: "To operate/run" },
         { korean: "전", romanization: "jeon", meaning: "Before" },
         { korean: "후", romanization: "hu", meaning: "after" },
@@ -2679,9 +2669,6 @@ Object.assign(flashcardData, {
         { korean: "나타내다 / 나타나다", romanization: "natanaeda / natanada", meaning: "To Represent / Show" },
         { korean: "금속", romanization: "geumsok", meaning: "Metal" },
         { korean: "만들어지다", romanization: "mandeureojida", meaning: "To be made" },
-        { korean: "서비스", romanization: "seobiseu", meaning: "Service" },
-        // Question 20
-        { korean: "설거지", romanization: "seolgeoji", meaning: "Doing the dishes" },
     ],
 
     "Grammar Connectors": [
