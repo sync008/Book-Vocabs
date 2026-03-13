@@ -1389,7 +1389,7 @@ Object.assign(flashcardData, {
         { korean: "냄새가 심하다", romanization: "naemsaega simhada", meaning: "to smell bad" },
         { korean: "소음이 심하다", romanization: "soeumi simhada", meaning: "to be noisy" },
         { korean: "쾌적하다", romanization: "kwaejeokhada", meaning: "to be pleasant" },
-        { korean: "치우다", romanization: "chiuda", meaning: "to clean up" },
+        { korean: "치우다", romanization: "chiuda", meaning: "to clear up" },
         { korean: "환기하다", romanization: "hwangihada", meaning: "to ventilate" },
         { korean: "버리다", romanization: "beorida", meaning: "to throw away" },
         { korean: "작업대", romanization: "jageomdae", meaning: "workbench" },

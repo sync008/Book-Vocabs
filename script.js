@@ -109,6 +109,8 @@ function createCategoryButtons() {
         "Chapter 34.2 (Prevention & Handling of Sexual Harassment)",
         "Chapter 35.1 (Workplace Environment Maintenance)",
         "Chapter 35.2 (Warehouse Management)",
+        "Chapter 36.1 (Packaging and Loading Work)",
+        "Chapter 36.2 (Shipment Management)",
     ];
 
     // Check if flashcardData exists
