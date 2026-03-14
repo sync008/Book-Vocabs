@@ -2,7 +2,7 @@ if (typeof flashcardData === 'undefined') var flashcardData = {};
 
 Object.assign(flashcardData, {
     
-    "Hard Words 1": [
+    "Hard Words 1 (March 13)": [
         { korean: "소독약", romanization: "sodongnyak", meaning: "Disinfectant" },
         { korean: "연고", romanization: "yeongo", meaning: "Ointment" },
         { korean: "소독을 하다", romanization: "sodongeul hada", meaning: "To Disinfect" },
@@ -35,7 +35,7 @@ Object.assign(flashcardData, {
         { korean: "모이다", romanization: "moida", meaning: "To Gather" },
     ],
 
-    "Hard Words 2": [
+    "Hard Words 2 (March 13)": [
         { korean: "동지", romanization: "dongji", meaning: "Winter Solstice" },
         { korean: "팥죽", romanization: "patjuk", meaning: "Red Bean Porridge" },
         { korean: "개천절", romanization: "gaecheonjeol", meaning: "National Foundation Day" },
@@ -69,7 +69,7 @@ Object.assign(flashcardData, {
         { korean: "개구리", romanization: "gaeguri", meaning: "Frog" },
     ],
 
-    "Hard Words 3": [
+    "Hard Words 3 (March 13)": [
         { korean: "환율이 오르다", romanization: "hwanyuri oreuda", meaning: "To Have A Rise In The Exchange Rate" },
         { korean: "환율이 내리다", romanization: "hwanyuri naerida", meaning: "To Have A Fall In The Exchange Rate" },
         { korean: "환전하다", romanization: "hwanjeonhada", meaning: "To Exchange Currency" },
@@ -105,6 +105,26 @@ Object.assign(flashcardData, {
         { korean: "묶다", romanization: "mukda", meaning: "to tie" },
         { korean: "찌다", romanization: "jjida", meaning: "To Steam" },
         { korean: "수저를 같이 들다", romanization: "sujereul gati deulda", meaning: "To Hold The Spoon And Chopsticks Together" },
+    ],
+
+    "Hard Words (March 14 run)": [
+        { korean: "영향을 주다", romanization: "yeonghyangeul juda", meaning: "To Influence" },
+        { korean: "작성하다", romanization: "jakseonghada", meaning: "To Fill Out" },
+        { korean: "반창고", romanization: "banchango", meaning: "Adhesive Plaster" },
+        { korean: "성묘하다", romanization: "seongmyohada", meaning: "To Visit Ancestral Graves" },
+        { korean: "정확하다", romanization: "jeonghwakada", meaning: "to be accurate" },
+        { korean: "찜질을 하다", romanization: "jjimjireul hada", meaning: "To Apply A Heat Compress" },
+        { korean: "환전하다", romanization: "hwanjeonhada", meaning: "To Exchange Currency" },
+        { korean: "신호를 위반하다", romanization: "sinhoreul wibanada", meaning: "To Violate Traffic Signals" },
+        { korean: "침을 뱉다", romanization: "chimeul baetda", meaning: "To Spit" },
+        { korean: "답답하다", romanization: "dapdaphada", meaning: "To Feel Stifled" },
+        { korean: "소원을 빌다", romanization: "sowoneul bilda", meaning: "To Make A Wish" },
+        { korean: "소독을 하다", romanization: "sodongeul hada", meaning: "To Disinfect" },
+        { korean: "저울에 올리다", romanization: "jeoure ollida", meaning: "To Place On A Scale" },
+        { korean: "배탈이 나다", romanization: "baetari nada", meaning: "To Have An Upset Stomach" },
+        { korean: "송금", romanization: "songgeum", meaning: "Money Transfer" },
+        { korean: "참가 분야", romanization: "chamga bunya", meaning: "Competition Categories" },
+        { korean: "전망", romanization: "jeonmang", meaning: "View" },
     ],
 
     "Additional Words (Daily Life 1)": [
@@ -176,7 +196,7 @@ Object.assign(flashcardData, {
         { korean: "놓다", romanization: "noda", meaning: "To put down / place / let go / release" },
         { korean: "순서", romanization: "sunseo", meaning: "Order / sequence / procedure" },
         { korean: "방법", romanization: "bangbeop", meaning: "Method / way / how to" },
-        { korean: "수직", romanization: "suchik", meaning: "Vertical / perpendicular" },
+        { korean: "수직", romanization: "sujik", meaning: "Vertical / perpendicular" },
     ],
 
     // "Additional Words (Work Life 2)": [
@@ -1309,7 +1329,7 @@ Object.assign(flashcardData, {
         { korean: "베란다", romanization: "beranda", meaning: "Veranda / Balcony" },
         { korean: "현관", romanization: "hyeongwan", meaning: "Entrance" },
         { korean: "현관문", romanization: "hyeongwanmun", meaning: "Entrance Door" },
-        { korean: "답답하다", romanization: "dapdaphada", meaning: "To Feel Stifled" },
+        { korean: "답답하다", romanization: "dapdaphada", meaning: "To Feel Stifled / Frustrated" },
         { korean: "마음에 들다", romanization: "maeume deulda", meaning: "To Like (Something)" },
         { korean: "난방", romanization: "nanbang", meaning: "Heating" },
         { korean: "둘러보다", romanization: "dulleoboda", meaning: "To Look Around" }
