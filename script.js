@@ -9,6 +9,8 @@ let isMultiSelectMode = false; // Is multi-select mode active?
 let selectedCategories = []; // Array of selected category names
 
     const memorizedCategories = [
+        "Classifiers (Native)",
+        "Classifiers (Sino)",
         "Mistakes Chapter 1-2",
         "Mistakes Chapter 3-4",
         "Mistakes Chapter 9-10",
@@ -78,6 +80,8 @@ let selectedCategories = []; // Array of selected category names
         "Chapter 35.2 (Warehouse Management)",
         "Chapter 36.1 (Packaging and Loading Work)",
         "Chapter 36.2 (Shipment Management)",
+        "Chapter 37.1 (Operating Machines)",
+        "Chapter 37.2 (Tools and their Uses)",
     ];
 
 // GET REFERENCES TO HTML ELEMENTS
