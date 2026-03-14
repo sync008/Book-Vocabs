@@ -19,6 +19,7 @@ let selectedCategories = []; // Array of selected category names
         "Additional Words (Daily Life 1)",
         "Additional Words (Daily Life 2)",
          "Additional Words (Work Life 1)",
+         "Prefixes & Suffixes",
         "Chapter 1.1",
         "Chapter 1.2",
         "Chapter 2",
