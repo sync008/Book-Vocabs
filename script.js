@@ -8,43 +8,10 @@ let isFlipped = false; // Is the card showing the back?
 let isMultiSelectMode = false; // Is multi-select mode active?
 let selectedCategories = []; // Array of selected category names
 
-// GET REFERENCES TO HTML ELEMENTS
-const categoryContainer = document.getElementById('category-container');
-const categoryButtonsDiv = document.getElementById('category-buttons');
-const flashcardArea = document.getElementById('flashcard-area');
-const flashcard = document.getElementById('flashcard');
-const cardContent = flashcard.querySelector('.card-content');
-const prevBtn = document.getElementById('prev-btn');
-const nextBtn = document.getElementById('next-btn');
-const cardCounter = document.getElementById('card-counter');
-const backToCategoriesBtn = document.getElementById('back-to-categories');
-const shuffleBtn = document.getElementById('shuffle-btn');
-const multiSelectToggle = document.getElementById('multi-select-toggle');
-const selectAllBtn = document.getElementById('select-all-btn');
-const startMultiBtn = document.getElementById('start-multi-btn');
-const currentCategoryDisplay = document.getElementById('current-category-display');
-
-// SHUFFLE FUNCTION - Randomizes an array
-function shuffleArray(array) {
-    const shuffled = [...array];
-    
-    for (let i = shuffled.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
-    }
-    
-    return shuffled;
-}
-
-// STEP 1: CREATE CATEGORY BUTTONS WHEN PAGE LOADS
-function createCategoryButtons() {
     const memorizedCategories = [
         "Mistakes Chapter 1-2",
         "Mistakes Chapter 3-4",
-        "Mistakes Chapter 5-6",
         "Mistakes Chapter 9-10",
-        "Chapter 1 - Culture",
-        "Chapter 2 - Culture",
         "Chapter 1.1",
         "Chapter 1.2",
         "Chapter 2",
@@ -112,6 +79,37 @@ function createCategoryButtons() {
         "Chapter 36.1 (Packaging and Loading Work)",
         "Chapter 36.2 (Shipment Management)",
     ];
+
+// GET REFERENCES TO HTML ELEMENTS
+const categoryContainer = document.getElementById('category-container');
+const categoryButtonsDiv = document.getElementById('category-buttons');
+const flashcardArea = document.getElementById('flashcard-area');
+const flashcard = document.getElementById('flashcard');
+const cardContent = flashcard.querySelector('.card-content');
+const prevBtn = document.getElementById('prev-btn');
+const nextBtn = document.getElementById('next-btn');
+const cardCounter = document.getElementById('card-counter');
+const backToCategoriesBtn = document.getElementById('back-to-categories');
+const shuffleBtn = document.getElementById('shuffle-btn');
+const multiSelectToggle = document.getElementById('multi-select-toggle');
+const selectAllBtn = document.getElementById('select-all-btn');
+const startMultiBtn = document.getElementById('start-multi-btn');
+const currentCategoryDisplay = document.getElementById('current-category-display');
+
+// SHUFFLE FUNCTION - Randomizes an array
+function shuffleArray(array) {
+    const shuffled = [...array];
+    
+    for (let i = shuffled.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+    }
+    
+    return shuffled;
+}
+
+// STEP 1: CREATE CATEGORY BUTTONS WHEN PAGE LOADS
+function createCategoryButtons() {
 
     // Check if flashcardData exists
     if (typeof flashcardData === 'undefined') {
@@ -194,24 +192,25 @@ multiSelectToggle.addEventListener('click', function() {
 // SELECT ALL BUTTON
 selectAllBtn.addEventListener('click', function() {
     const allButtons = categoryButtonsDiv.querySelectorAll('.category-btn');
-    const allSelected = selectedCategories.length === Object.keys(flashcardData).length;
-    
-    if (allSelected) {
+    const memorizedSelected = selectedCategories.filter(c => memorizedCategories.includes(c));
+    const allMemorizedSelected = memorizedSelected.length === memorizedCategories.length;
+
+    if (allMemorizedSelected) {
         // Deselect all
         selectedCategories = [];
         allButtons.forEach(btn => btn.classList.remove('selected'));
         startMultiBtn.classList.add('hidden');
         selectAllBtn.textContent = '✓ Select All';
     } else {
-        // Select all visible categories
+        // Select only memorized categories
         selectedCategories = [];
         allButtons.forEach(btn => {
-            if (btn.style.display !== 'none') {
-                const categoryName = btn.dataset.category;
-                if (!selectedCategories.includes(categoryName)) {
-                    selectedCategories.push(categoryName);
-                    btn.classList.add('selected');
-                }
+            const categoryName = btn.dataset.category;
+            if (memorizedCategories.includes(categoryName) && btn.style.display !== 'none') {
+                selectedCategories.push(categoryName);
+                btn.classList.add('selected');
+            } else {
+                btn.classList.remove('selected');
             }
         });
         startMultiBtn.classList.remove('hidden');
