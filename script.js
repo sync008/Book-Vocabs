@@ -9,6 +9,11 @@ let isMultiSelectMode = false; // Is multi-select mode active?
 let selectedCategories = []; // Array of selected category names
 
     const memorizedCategories = [
+        "Words from Module (Animals)",
+        "Words from Module (Food)",
+        "Words from Module (Objects)",
+        "Words from Module (Furniture)",
+        "Words from Module (Places)",
         "Classifiers (Native)",
         "Classifiers (Sino)",
         "Mistakes Chapter 1-2",
