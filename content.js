@@ -173,11 +173,11 @@ Object.assign(flashcardData, {
     ],
 
     "Prefixes & Suffixes": [
-        { korean: "동안", romanization: "dongan", meaning: "During / For (Duration of Time). Noun + Dongan" },
-        { korean: "-번째", romanization: "-beonjjae", meaning: "ordinal marker (-th, first/second/etc.)" },
-        { korean: "빈", romanization: "bin", meaning: "bin + noun = Empty Noun" },
-        { korean: "다-", romanization: "da", meaning: "da + noun (many)" },
-        { korean: "-차", romanization: "cha", meaning: "Sino number + cha (order / sequence)" },
+        { korean: "-동안", romanization: "-dongan", meaning: "During / For (Duration of Time). Noun + Dongan" },
+        { korean: "-번째", romanization: "-beonjjae", meaning: "ordinal marker. Number + beonjjae." },
+        { korean: "빈-", romanization: "bin-", meaning: "Empty Noun. Bin + noun" },
+        { korean: "다-", romanization: "da", meaning: "Many Noun. Da + noun" },
+        { korean: "-차", romanization: "cha", meaning: "Order / sequence. Sino number + cha " },
     ],
 
     "Grammar Rules": [
