@@ -66,6 +66,7 @@ Object.assign(flashcardData, {
         { korean: "가사", romanization: "gasa", meaning: "Lyrics" },
         { korean: "모집", romanization: "mojip", meaning: "Recruitment" },
         { korean: "마루", romanization: "maru", meaning: "Maru (Floor Space For Gathering)" },
+        { korean: "개구리", romanization: "gaeguri", meaning: "Frog" },
     ],
 
     "Hard Words 3": [
@@ -113,7 +114,6 @@ Object.assign(flashcardData, {
         { korean: "같다", romanization: "gatda", meaning: "To be the same" },
         { korean: "실력", romanization: "sillyeok", meaning: "Skill / ability / proficiency" },
         { korean: "설명", romanization: "seolmyeong", meaning: "Explanation / description" },
-        { korean: "도", romanization: "do", meaning: "degrees (temperature)" },
     ],
 
     // "Additional Words (Daily Life 2)": [
@@ -202,10 +202,9 @@ Object.assign(flashcardData, {
         { korean: "지우개", romanization: "jiugae", meaning: "Eraser" },
         { korean: "필통", romanization: "piltong", meaning: "Pencil case" },
         { korean: "수첩", romanization: "sucheop", meaning: "Pocketbook" },
-        { korean: "수저", romanization: "sujeo", meaning: "Spoon and chopstick" },
-        { korean: "계산기", romanization: "gyesangi", meaning: "Calculator" },
+        { korean: "수저", romanization: "sujeo", meaning: "Spoon and chopstick" },,
         { korean: "쓰레기통", romanization: "sseuregitong", meaning: "Garbage bin" },
-        { korean: "건강보험증", romanization: "geongang bheomjeung", meaning: "Health insurance card" },
+        { korean: "건강보험증", romanization: "geongang boheomjeung", meaning: "Health insurance card" },
         { korean: "명함", romanization: "myeongham", meaning: "Calling card" },
         { korean: "장갑", romanization: "janggap", meaning: "Gloves" },
         { korean: "지도", romanization: "jido", meaning: "Map" },
@@ -287,6 +286,7 @@ Object.assign(flashcardData, {
     ],
 
     "Prefixes & Suffixes": [
+        { korean: "-도", romanization: "-do", meaning: "Degrees (temperature). Number + do" },
         { korean: "-동안", romanization: "-dongan", meaning: "During / For (Duration of Time). Noun + Dongan" },
         { korean: "-번째", romanization: "-beonjjae", meaning: "ordinal marker. Number + beonjjae." },
         { korean: "빈-", romanization: "bin-", meaning: "Empty Noun. Bin + noun" },
