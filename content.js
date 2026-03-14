@@ -133,6 +133,10 @@ Object.assign(flashcardData, {
         { korean: "생기다", romanization: "saenggida", meaning: "To arise / appear / look like / get" },
         { korean: "나다", romanization: "nada", meaning: "To come out / occur / happen" },
         { korean: "뚫다", romanization: "ttulda", meaning: "To pierce / drill / bore through" },
+        { korean: "놓다", romanization: "noda", meaning: "To put down / place / let go / release" },
+        { korean: "순서", romanization: "sunseo", meaning: "Order / sequence / procedure" },
+        { korean: "방법", romanization: "bangbeop", meaning: "Method / way / how to" },
+        { korean: "수직", romanization: "suchik", meaning: "Vertical / perpendicular" },
     ],
 
     "Additional Words (Work Life 2)": [
@@ -204,8 +208,40 @@ Object.assign(flashcardData, {
         { korean: "원", romanization: "won", meaning: "korean currency" }
     ],
 
-    "Grammar": [
-        { korean: "날 / 하루 / 며칠", romanization: "nal / haru (eul onwards after 1) / myeochil", meaning: "day / one day / how many days?" },
+    "Grammar Rules": [
+        { korean: "-고 싶다", romanization: "-go sipda", meaning: "Want to + verb (express desire)" },
+        { korean: "-고 있다", romanization: "-go itda", meaning: "Currently doing (present progressive)" },
+            
+        { korean: "-기 때문에", romanization: "-gi ttemune", meaning: "Because (verb/adjective + reason)" },
+        { korean: "-기 전에", romanization: "-gi jeone", meaning: "Before doing (verb)" },
+
+        { korean: "-ㄹ/을 수 있다", romanization: "-l/eul su itda", meaning: "Can / able to (expressing ability)" },
+        { korean: "-ㄹ/을 수 없다", romanization: "-l/eul su eopda", meaning: "Cannot / unable to (expressing inability)" },
+        { korean: "-ㄹ/을 것이다", romanization: "-l/eul geosida", meaning: "Will / going to (future tense)" },
+        { korean: "-ㄹ/을 때", romanization: "-l/eul ttae", meaning: "When / at the time of (verb/adjective)" },
+        { korean: "-ㄹ/을게요", romanization: "-l/eulgeyo", meaning: "I will (promise or intention)" },
+        { korean: "-ㄹ/을까요", romanization: "-l/eulkkayo", meaning: "Shall we? / I wonder (suggestion or conjecture)" },
+
+        { korean: "-지 않다", romanization: "-ji anta", meaning: "Negation (do not / does not)" },
+        { korean: "-니까", romanization: "-nikka", meaning: "Because / since (giving reason or justification)" },
+        { korean: "-지만", romanization: "-jiman", meaning: "But / however (contrast)" },
+        { korean: "-던", romanization: "-deon", meaning: "Used to / was doing (past habit or recollection)" },
+        { korean: "-겠다", romanization: "-getda", meaning: "Will / intend to / seems like (supposition or intention)" },
+        { korean: "-도록", romanization: "-dorok", meaning: "So that / in order to / until" },
+        
+        { korean: "-ㄴ/은 후에", romanization: "-n/eun hue", meaning: "After doing (past action)" },
+        { korean: "-는 동안", romanization: "-neun dongan", meaning: "While / during (ongoing action)" },
+
+        { korean: "-아/어야 하다", romanization: "-a/eo ya hada", meaning: "Must / have to (expressing obligation)" },
+        { korean: "-아/어도", romanization: "-a/eo do", meaning: "Even if / even though (concession)" },
+        { korean: "-아/어 보다", romanization: "-a/eo boda", meaning: "To try doing something" },
+        { korean: "-아/어서", romanization: "-a/eo seo", meaning: "Because / so (reason or sequential action)" },
+        { korean: "-아/어요", romanization: "-a/eo yo", meaning: "Polite present tense ending" },
+        { korean: "-아/어 놓다", romanization: "-a/eo noda", meaning: "To do and leave it that way (prepared state)" },
+        { korean: "-아/어 주다", romanization: "-a/eo juda", meaning: "To do something for someone (favor)" },
+    ],
+
+    "Linking Words & Expressions": [
         { korean: "때", romanization: "ttae", meaning: "at the time of / when" },
         { korean: "및", romanization: "mit", meaning: "and / as well as" },
         { korean: "어때요?", romanization: "eottaeyo?", meaning: "How is it?" },
@@ -224,9 +260,9 @@ Object.assign(flashcardData, {
         { korean: "다만", romanization: "daman", meaning: "however, but, only" },
         { korean: "계속", romanization: "gyesok", meaning: "Continuously / keep doing / still" },
         { korean: "오랫동안", romanization: "oraetdongan", meaning: "For a long time" },
-        { korean: "않도록", romanization: "antadorok", meaning: "So that (something) does not happen" },
         { korean: "이상", romanization: "isang", meaning: "more than / at least" },
         { korean: "이하", romanization: "iha", meaning: "less than / at most" },
+        { korean: "때문에", romanization: "ttemune", meaning: "Because of / due to" },
     ],
 
     "Prefixes & Suffixes": [
