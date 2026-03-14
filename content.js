@@ -918,7 +918,6 @@ Object.assign(flashcardData, {
         { korean: "송금", romanization: "songgeum", meaning: "Money Transfer" },
         { korean: "계좌 이체", romanization: "gyejwa iche", meaning: "Bank Transfer" },
         { korean: "통장 정리", romanization: "tongjang jeongri", meaning: "Bankbook Update" },
-        { korean: "버튼을 누르다", romanization: "beoteoneul nureuda", meaning: "To Press The Button" },
         { korean: "환전하다", romanization: "hwanjeonhada", meaning: "To Exchange Currency" },
         { korean: "환율이 오르다", romanization: "hwanyuri oreuda", meaning: "To Have A Rise In The Exchange Rate" },
         { korean: "환율이 내리다", romanization: "hwanyuri naerida", meaning: "To Have A Fall In The Exchange Rate" },
@@ -1407,7 +1406,6 @@ Object.assign(flashcardData, {
         { korean: "출하 관리", romanization: "chulha gwalli", meaning: "Shipment Management" },
         { korean: "입고하다", romanization: "ipgohada", meaning: "to receive (goods)" },
         { korean: "출고하다", romanization: "chulgohada", meaning: "to take out (goods)" },
-        { korean: "검수하다", romanization: "geomsuhada", meaning: "to inspect" },
         { korean: "운반하다", romanization: "unbanhada", meaning: "to transport" },
         { korean: "싣다/적재하다", romanization: "sitda/jeokjaehada", meaning: "to load" },
         { korean: "내리다", romanization: "naerida", meaning: "to unload" },
@@ -1452,7 +1450,7 @@ Object.assign(flashcardData, {
         { korean: "이물질", romanization: "imuljil", meaning: "foreign substance" },
         { korean: "끼다", romanization: "kkida", meaning: "to get stuck" },
         { korean: "제대로", romanization: "jedaero", meaning: "properly" },
-        { korean: "점검하다", romanization: "jeomgeomhada", meaning: "to inspect" },
+        { korean: "검사하다 / 검수하다 / 점검하다", romanization: "geomsahada / geomsuhada / jeomgeomhada", meaning: "to inspect" },
         { korean: "아무리", romanization: "amuri", meaning: "no matter how" },
         { korean: "환풍기", romanization: "hwanpungi", meaning: "ventilator" }
     ],
@@ -1609,7 +1607,6 @@ Object.assign(flashcardData, {
     "Chapter 40.2 (Product Defects)": [
         { korean: "제품 불량", romanization: "jepum bullyang", meaning: "Product Defects" },
         { korean: "불량품", romanization: "bullyangpum", meaning: "defective product" },
-        { korean: "검사하다", romanization: "geomsahada", meaning: "to inspect" },
         { korean: "불량품이 나오다", romanization: "bullyangpumi naoda", meaning: "to come out as a defective product" },
         { korean: "휘다", romanization: "hwida", meaning: "to bend, to be bent" },
         { korean: "성형이 덜 되다", romanization: "seonghyeongi deol doeda", meaning: "to have incomplete molding" },
