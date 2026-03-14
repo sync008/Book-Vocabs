@@ -1825,7 +1825,7 @@ Object.assign(flashcardData, {
     ],
 
     "Chapter 38.1 (Assembly Tools and Parts)": [
-        { korean: "조립 공구와 부품", romanization: "jorip gonggywa bupum", meaning: "Assembly Tools and Parts" },
+        { korean: "조립 공구와 부품", romanization: "jorip gongguwa bupum", meaning: "Assembly Tools and Parts" },
         { korean: "플라이어", romanization: "peullaieo", meaning: "pliers" },
         { korean: "롱 노즈 플라이어", romanization: "rong nojeu peullaieo", meaning: "long-nosed pliers" },
         { korean: "펜치", romanization: "penchi", meaning: "pincers" },
