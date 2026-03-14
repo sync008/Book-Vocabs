@@ -148,6 +148,120 @@ Object.assign(flashcardData, {
 
     // ],
 
+    "Words from Module (Animals)": [
+        // Animals
+        { korean: "개", romanization: "gae", meaning: "Dog" },
+        { korean: "강아지", romanization: "gangaji", meaning: "Puppy" },
+        { korean: "고양이", romanization: "goyangi", meaning: "Cat" },
+        { korean: "토끼", romanization: "tokki", meaning: "Rabbit" },
+        { korean: "쥐", romanization: "jwi", meaning: "Mouse" },
+        { korean: "새", romanization: "sae", meaning: "Bird" },
+        { korean: "개구리", romanization: "gaeguri", meaning: "Frog" },
+        { korean: "뱀", romanization: "baem", meaning: "Snake" },
+        { korean: "까치", romanization: "kkachi", meaning: "Magpie" },
+        { korean: "귀뚜라미", romanization: "gwittulami", meaning: "Cricket" },
+        // Animal Farm
+        { korean: "닭", romanization: "dak", meaning: "Chicken" },
+        { korean: "소", romanization: "so", meaning: "Cow" },
+        { korean: "오리", romanization: "ori", meaning: "Duck" },
+        { korean: "물고기", romanization: "mulgogi", meaning: "Fish" },
+        { korean: "염소", romanization: "yeomso", meaning: "Goat" },
+        { korean: "말", romanization: "mal", meaning: "Horse" },
+        { korean: "돼지", romanization: "dwaeji", meaning: "Pig" },
+        { korean: "양", romanization: "yang", meaning: "Sheep" },
+        { korean: "황소", romanization: "hwangso", meaning: "Ox" },
+        // Wild Animals
+        { korean: "호랑이", romanization: "horangi", meaning: "Tiger" },
+        { korean: "사자", romanization: "saja", meaning: "Lion" },
+        { korean: "여우", romanization: "yeou", meaning: "Fox" },
+        { korean: "코끼리", romanization: "kokkiri", meaning: "Elephant" },
+        { korean: "원숭이", romanization: "wonsungi", meaning: "Monkey" },
+        { korean: "곰", romanization: "gom", meaning: "Bear" },
+        { korean: "기린", romanization: "girin", meaning: "Giraffe" },
+        { korean: "타조", romanization: "tajo", meaning: "Ostrich" }
+    ],
+    
+    "Words from Module (Food)": [
+        // Fruit and Food
+        { korean: "포도", romanization: "podo", meaning: "Grape" },
+        { korean: "배", romanization: "bae", meaning: "Pear" },
+        { korean: "곡식", romanization: "goksik", meaning: "Grains" },
+        // Grain
+        { korean: "벼", romanization: "byeo", meaning: "rice" },
+        { korean: "보리", romanization: "bori", meaning: "barley" },
+        { korean: "밀", romanization: "mil", meaning: "wheat" },
+        { korean: "콩", romanization: "kong", meaning: "bean" }
+    ],
+
+    "Words from Module (Objects)": [
+        // Objects
+        { korean: "칠판", romanization: "chilpan", meaning: "Whiteboard/Blackboard" },
+        { korean: "책", romanization: "chaek", meaning: "Book" },
+        { korean: "공책", romanization: "gongchaek", meaning: "Notebook" },
+        { korean: "연필", romanization: "yeonpil", meaning: "Pencil" },
+        { korean: "지우개", romanization: "jiugae", meaning: "Eraser" },
+        { korean: "필통", romanization: "piltong", meaning: "Pencil case" },
+        { korean: "수첩", romanization: "sucheop", meaning: "Pocketbook" },
+        { korean: "수저", romanization: "sujeo", meaning: "Spoon and chopstick" },
+        { korean: "계산기", romanization: "gyesangi", meaning: "Calculator" },
+        { korean: "쓰레기통", romanization: "sseuregitong", meaning: "Garbage bin" },
+        { korean: "건강보험증", romanization: "geongang bheomjeung", meaning: "Health insurance card" },
+        { korean: "명함", romanization: "myeongham", meaning: "Calling card" },
+        { korean: "장갑", romanization: "janggap", meaning: "Gloves" },
+        { korean: "지도", romanization: "jido", meaning: "Map" },
+        { korean: "사전", romanization: "sajeon", meaning: "Dictionary" },
+        { korean: "영수증", romanization: "yeongsujeung", meaning: "Receipt" },
+        { korean: "귀덮개", romanization: "gwideomgae", meaning: "Ear cover" },
+        { korean: "린스", romanization: "rinseu", meaning: "Conditioner" },
+        { korean: "비누", romanization: "binu", meaning: "Soap" },
+        { korean: "칫솔", romanization: "chitsol", meaning: "Toothbrush" },
+        { korean: "치약", romanization: "chiyak", meaning: "Toothpaste" },
+        { korean: "수건", romanization: "sugeon", meaning: "Towel" },
+        { korean: "면도기", romanization: "myeondogi", meaning: "Razor" },
+        { korean: "목도리", romanization: "mokdori", meaning: "Scarf" }
+    ],
+
+    "Words from Module (Furniture)": [
+        // Furniture
+        { korean: "가구", romanization: "gagu", meaning: "Furniture" },
+        { korean: "서류함", romanization: "seoryuham", meaning: "Filing/Document cabinet" },
+        { korean: "보관함", romanization: "bogwanham", meaning: "Storage box/Locker" },
+        { korean: "책장/책꽂", romanization: "chaekjang/chaekkkot", meaning: "Bookshelf" },
+        { korean: "서랍장", romanization: "seorapjang", meaning: "Drawer" },
+        { korean: "밥상", romanization: "bapsang", meaning: "Dining table" },
+        // Electronics
+        { korean: "자동판매기/자판기", romanization: "jadong panmaegi/japangi", meaning: "Vending machine" },
+        { korean: "선풍기", romanization: "seonpunggi", meaning: "Electric fan" },
+        { korean: "온도계", romanization: "ondogye", meaning: "Thermometer" },
+        { korean: "가습기", romanization: "gaseupgi", meaning: "Humidifier" },
+        { korean: "사진기", romanization: "sajingi", meaning: "Camera" },
+        { korean: "난로", romanization: "nallo", meaning: "Heater" },
+        { korean: "복사기", romanization: "boksagi", meaning: "Copier machine" }
+    ],
+
+    "Words from Module (Places)": [
+        // Places
+        { korean: "사무실", romanization: "samusil", meaning: "Office" },
+        { korean: "세탁소", romanization: "setakso", meaning: "Laundromat" },
+        { korean: "미용실", romanization: "miyongsil", meaning: "Hair salon" },
+        { korean: "공중전화", romanization: "gongjung jeonhwa", meaning: "Phonebooth" },
+        { korean: "소방서", romanization: "sobangso", meaning: "Fire station" },
+        { korean: "경찰서", romanization: "gyeongchalso", meaning: "Police station" },
+        { korean: "주차장", romanization: "juchajang", meaning: "Parking lot" },
+        { korean: "건물", romanization: "geonmul", meaning: "Building" },
+        { korean: "농장", romanization: "nongjang", meaning: "Farm" },
+        { korean: "영화관", romanization: "yeonghwagwan", meaning: "Movie theater" },
+        { korean: "돼지우리", romanization: "dwaejiuri", meaning: "Piggery" },
+        { korean: "양계장", romanization: "yanggyejang", meaning: "Chicken farm" },
+        { korean: "축사", romanization: "chuksa", meaning: "Poultry/Barn" },
+        { korean: "교실", romanization: "gyosil", meaning: "Classroom" },
+        // Streets
+        { korean: "이정표", romanization: "ijeongpyo", meaning: "direction sign / road sign" },
+        { korean: "신호등", romanization: "sinhodeung", meaning: "traffic light" },
+        { korean: "도로", romanization: "doro", meaning: "road" },
+        { korean: "골목", romanization: "golmok", meaning: "alley" }
+    ],
+
     "Linking Words & Expressions": [
         { korean: "때", romanization: "ttae", meaning: "at the time of / when" },
         { korean: "및", romanization: "mit", meaning: "and / as well as" },
@@ -300,6 +414,9 @@ Object.assign(flashcardData, {
         { korean: "목수", romanization: "moksu", meaning: "Carpenter" },
         { korean: "농부", romanization: "nongbu", meaning: "Farmer" },
         { korean: "어부", romanization: "eobu", meaning: "Fisherperson" },
+        { korean: "주부", romanization: "jubu", meaning: "Homemaker" },
+        { korean: "군인", romanization: "gunin", meaning: "Soldier" },
+        { korean: "미용사", romanization: "miyongsa", meaning: "Hairdresser" },
         { korean: "어느", romanization: "eoneu", meaning: "Which" },
         { korean: "국적", romanization: "gukjeok", meaning: "Nationality" },
         { korean: "누구", romanization: "nugu", meaning: "Who" },
@@ -724,7 +841,7 @@ Object.assign(flashcardData, {
         { korean: "횡단보도", romanization: "hoengdanbodo", meaning: "Crosswalk" },
         { korean: "육교", romanization: "yukgyo", meaning: "Overpass" },
         { korean: "옥상", romanization: "oksang", meaning: "Rooftop" },
-        { korean: "지하", romanization: "jiha", meaning: "Underground" },
+        { korean: "지하", romanization: "jiha", meaning: "Underground / Basement" },
         { korean: "근처", romanization: "geuncheo", meaning: "Nearby" },
         { korean: "사거리", romanization: "sageori", meaning: "Intersection" },
         { korean: "마트", romanization: "mateu", meaning: "Mart" }
@@ -732,7 +849,7 @@ Object.assign(flashcardData, {
 
     "Chapter 15.1": [
         { korean: "청바지", romanization: "cheongbaji", meaning: "Jeans" },
-        { korean: "점퍼/재킷", romanization: "jeompeo/jaekit", meaning: "Jacket" },
+        { korean: "잠바 / 점퍼 / 재킷", romanization: "jamba/ jeompeo/ jaekit", meaning: "Jacket" },
         { korean: "치마", romanization: "chima", meaning: "Skirt" },
         { korean: "반바지", romanization: "banbaji", meaning: "Shorts" },
         { korean: "원피스", romanization: "wonpiseu", meaning: "Dress" },
@@ -886,7 +1003,7 @@ Object.assign(flashcardData, {
         { korean: "소고기", romanization: "sogogi", meaning: "Beef" },
         { korean: "돼지고기", romanization: "dwaejigogi", meaning: "Pork" },
         { korean: "닭고기", romanization: "dakgogi", meaning: "Chicken" },
-        { korean: "채소", romanization: "chaeso", meaning: "Vegetables" },
+        { korean: "채소/야채", romanization: "chaeso/yachae", meaning: "Vegetables" },
         { korean: "파", romanization: "pa", meaning: "Green Onion" },
         { korean: "양파", romanization: "yangpa", meaning: "Onion" },
         { korean: "마늘", romanization: "maneul", meaning: "Garlic" },
@@ -2502,7 +2619,6 @@ Object.assign(flashcardData, {
         { korean: "개수", romanization: "gaesu", meaning: "quantity, number" },
         { korean: "누르다", romanization: "nureuda", meaning: "to press" },
         { korean: "완료되다", romanization: "wallyo-doeda", meaning: "to be completed" },
-        { korean: "영수증", romanization: "yeongsujeung", meaning: "receipt" },
         { korean: "출력되다", romanization: "chullyeokdoeda", meaning: "to be printed" },
         { korean: "덕분", romanization: "deokbun", meaning: "thanks to" },
     ],
@@ -2542,9 +2658,7 @@ Object.assign(flashcardData, {
         { korean: "붙이다", romanization: "buchida", meaning: "To attach/to stick" },
         { korean: "주택가", romanization: "jutaekga", meaning: "Residential area/residential district" },
         { korean: "행정복지센터", romanization: "haengjeong bokji senteo", meaning: "Community center/administrative welfare center" },
-        { korean: "골목", romanization: "golmok", meaning: "Alley" },
         { korean: "종류", romanization: "jongnyu", meaning: "Type/kind/category" },
-        { korean: "크기", romanization: "keugi", meaning: "Size" },
         { korean: "무게", romanization: "muge", meaning: "Weight" },
         { korean: "지역", romanization: "jiyeok", meaning: "Region/area" },
         { korean: "비용", romanization: "biyong", meaning: "Cost/fee/expense" },
@@ -2575,7 +2689,6 @@ Object.assign(flashcardData, {
         { korean: "북쪽", romanization: "bukjjok", meaning: "North/northern" },
         { korean: "동쪽", romanization: "dongjjok", meaning: "East/eastern" },
         { korean: "서쪽", romanization: "seojjok", meaning: "West/western" },
-        { korean: "도로", romanization: "doro", meaning: "Road" },
         { korean: "고속", romanization: "gosok", meaning: "High-speed/express" },
         { korean: "운행", romanization: "unhaeng", meaning: "Operation/service" },
     ],
