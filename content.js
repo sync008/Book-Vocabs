@@ -159,9 +159,9 @@ Object.assign(flashcardData, {
         { korean: "나타내다 / 나타나다", romanization: "natanaeda / natanada", meaning: "To Represent / Show" },
     ],
 
-    "Additional Words (Daily Life 3)": [
+    // "Additional Words (Daily Life 3)": [
 
-    ],
+    // ],
 
     "Additional Words (Work Life 1)": [
         { korean: "위험하다", romanization: "wiheomhada", meaning: "To be dangerous / hazardous" },
