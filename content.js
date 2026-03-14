@@ -114,15 +114,54 @@ Object.assign(flashcardData, {
         { korean: "같다", romanization: "gatda", meaning: "To be the same" },
         { korean: "실력", romanization: "sillyeok", meaning: "Skill / ability / proficiency" },
         { korean: "설명", romanization: "seolmyeong", meaning: "Explanation / description" },
+        { korean: "문화", romanization: "munhwa", meaning: "culture" },
+        { korean: "휴식", romanization: "hyusik", meaning: "rest / break" },
+        { korean: "취하다", romanization: "chwihada", meaning: "to take (rest)" },
+        { korean: "좌식 문화", romanization: "jwasik munhwa", meaning: "floor-sitting culture" },
+        { korean: "식사 예절", romanization: "siksa yejeol", meaning: "dining etiquette" },
+        { korean: "일상 생활", romanization: "ilsang saenghwal", meaning: "Daily Life" },
+        { korean: "인근", romanization: "ingeun", meaning: "Neighborhood / nearby area" },
+        { korean: "하늘", romanization: "haneul", meaning: "Sky" },
+        { korean: "생활하다", romanization: "saenghwalhada", meaning: "to live" },
+        { korean: "그런데", romanization: "geureonde", meaning: "however/but" },
+        { korean: "알뜰하다", romanization: "altteulhada", meaning: "affordable/economical/thrifty" },
+        { korean: "등록증", romanization: "deungrokjeung", meaning: "Registration card" },
+        { korean: "판매하다", romanization: "panmaehada", meaning: "to sell" },
+        { korean: "단어", romanization: "daneo", meaning: "word" },
+        { korean: "직장생활", romanization: "jikjangsaenghwal", meaning: "work life/office life" },
+        { korean: "금속", romanization: "geumsok", meaning: "Metal" },
+        { korean: "만들어지다", romanization: "mandeureojida", meaning: "To be made" },
     ],
 
-    // "Additional Words (Daily Life 2)": [
+    "Additional Words (Daily Life 2)": [
+        { korean: "주문", romanization: "jumun", meaning: "Order" },
+        { korean: "빠르다", romanization: "ppareuda", meaning: "To be fast" },
+        { korean: "자세하다", romanization: "jasehada", meaning: "To be detailed" },
+        { korean: "무료", romanization: "muryo", meaning: "Free" },
+        { korean: "유료", romanization: "yuryo", meaning: "Paid" },
+        { korean: "효과", romanization: "hyogwa", meaning: "Effect / Result" },
+        { korean: "단점", romanization: "danjeom", meaning: "Disadvantage / Weak point" },
+        { korean: "장점", romanization: "jangjeom", meaning: "Advantage / Strong point" },
+        { korean: "직접", romanization: "jikjeop", meaning: "Directly / In person" },
+        { korean: "언제든지 / 언제나", romanization: "eonjedeunji / eonjena", meaning: "Anytime / Whenever" },
+        { korean: "운영하다", romanization: "unyeonghada", meaning: "To operate/run" },
+        { korean: "전", romanization: "jeon", meaning: "Before" },
+        { korean: "후", romanization: "hu", meaning: "after" },
+        { korean: "가장 / 제일", romanization: "gajang/jeil", meaning: "The most" },
+        { korean: "가능하다", romanization: "ganeunghada", meaning: "Possible / available" },
+        { korean: "무인", romanization: "muin", meaning: "unmanned / unattended" },
+        { korean: "판매점 / 매장", romanization: "panmaejeom / maejang", meaning: "store / shop" },
+        { korean: "생수", romanization: "saengsu", meaning: "bottled water" },
+        { korean: "기타", romanization: "gita", meaning: "others / miscellaneous" },
+        { korean: "수표", romanization: "supyo", meaning: "Check" },
+        { korean: "화폐", romanization: "hwapye", meaning: "Currency / Money" },
+        { korean: "가치", romanization: "gachi", meaning: "Value" },
+        { korean: "나타내다 / 나타나다", romanization: "natanaeda / natanada", meaning: "To Represent / Show" },
+    ],
 
-    // ],
+    "Additional Words (Daily Life 3)": [
 
-    // "Additional Words (Daily Life 3)": [
-
-    // ],
+    ],
 
     "Additional Words (Work Life 1)": [
         { korean: "위험하다", romanization: "wiheomhada", meaning: "To be dangerous / hazardous" },
@@ -2178,67 +2217,6 @@ Object.assign(flashcardData, {
         { korean: "붉다", romanization: "bukda", meaning: "to be red" },
         { korean: "변하다", romanization: "byeonhada", meaning: "to change" },
         { korean: "손자국이 남다", romanization: "sonjagugi namda", meaning: "to have handprints" }
-    ],
-
-    "Mistakes Chapter 1-2": [
-        // Question 4
-        { korean: "알뜰하다", romanization: "altteulhada", meaning: "affordable/economical/thrifty" },
-        // Question 8
-        { korean: "등록증", romanization: "deungrokjeung", meaning: "Registration card" },
-        // Question 10
-        { korean: "판매하다", romanization: "panmaehada", meaning: "to sell" },
-        // Question 19
-        { korean: "단어", romanization: "daneo", meaning: "word" },
-        { korean: "직장생활", romanization: "jikjangsaenghwal", meaning: "work life/office life" },
-    ],
-
-    "Mistakes Chapter 3-4": [
-        // Question 5 
-        { korean: "인근", romanization: "ingeun", meaning: "Neighborhood / nearby area" },
-        { korean: "하늘", romanization: "haneul", meaning: "Sky" },
-        { korean: "생활하다", romanization: "saenghwalhada", meaning: "to live" },
-        { korean: "그런데", romanization: "geureonde", meaning: "however/but" },
-        // Question 18
-        { korean: "문화", romanization: "munhwa", meaning: "culture" },
-        { korean: "휴식", romanization: "hyusik", meaning: "rest / break" },
-        { korean: "취하다", romanization: "chwihada", meaning: "to take (rest)" },
-        { korean: "좌식 문화", romanization: "jwasik munhwa", meaning: "floor-sitting culture" },
-        { korean: "식사 예절", romanization: "siksa yejeol", meaning: "dining etiquette" },
-        { korean: "일상 생활", romanization: "ilsang saenghwal", meaning: "Daily Life" },
-    ],
-
-    "Mistakes Chapter 9-10": [
-        // Question 7
-        { korean: "주문", romanization: "jumun", meaning: "Order" },
-        { korean: "빠르다", romanization: "ppareuda", meaning: "To be fast" },
-        { korean: "자세하다", romanization: "jasehada", meaning: "To be detailed" },
-        { korean: "무료", romanization: "muryo", meaning: "Free" },
-        { korean: "유료", romanization: "yuryo", meaning: "Paid" },
-        // Question 8
-        { korean: "효과", romanization: "hyogwa", meaning: "Effect / Result" },
-        { korean: "단점", romanization: "danjeom", meaning: "Disadvantage / Weak point" },
-        { korean: "장점", romanization: "jangjeom", meaning: "Advantage / Strong point" },
-        { korean: "직접", romanization: "jikjeop", meaning: "Directly / In person" },
-        { korean: "언제든지 / 언제나", romanization: "eonjedeunji / eonjena", meaning: "Anytime / Whenever" },
-        // Question 10
-        { korean: "운영하다", romanization: "unyeonghada", meaning: "To operate/run" },
-        { korean: "전", romanization: "jeon", meaning: "Before" },
-        { korean: "후", romanization: "hu", meaning: "after" },
-        // Question 11
-        { korean: "가장 / 제일", romanization: "gajang/jeil", meaning: "The most" },
-        { korean: "가능하다", romanization: "ganeunghada", meaning: "Possible / available" },
-        // Question 12
-        { korean: "무인", romanization: "muin", meaning: "unmanned / unattended" },
-        { korean: "판매점 / 매장", romanization: "panmaejeom / maejang", meaning: "store / shop" },
-        { korean: "생수", romanization: "saengsu", meaning: "bottled water" },
-        { korean: "기타", romanization: "gita", meaning: "others / miscellaneous" },
-        // Question 17
-        { korean: "수표", romanization: "supyo", meaning: "Check" },
-        { korean: "화폐", romanization: "hwapye", meaning: "Currency / Money" },
-        { korean: "가치", romanization: "gachi", meaning: "Value" },
-        { korean: "나타내다 / 나타나다", romanization: "natanaeda / natanada", meaning: "To Represent / Show" },
-        { korean: "금속", romanization: "geumsok", meaning: "Metal" },
-        { korean: "만들어지다", romanization: "mandeureojida", meaning: "To be made" },
     ],
 
     "Grammar Connectors": [
