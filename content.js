@@ -239,6 +239,11 @@ Object.assign(flashcardData, {
         { korean: "-아/어요", romanization: "-a/eo yo", meaning: "Polite present tense ending" },
         { korean: "-아/어 놓다", romanization: "-a/eo noda", meaning: "To do and leave it that way (prepared state)" },
         { korean: "-아/어 주다", romanization: "-a/eo juda", meaning: "To do something for someone (favor)" },
+
+        { korean: "-다고 하다", romanization: "-dago hada", meaning: "Reported speech - statement (says that / said that)" },
+        { korean: "-냐고 하다", romanization: "-nyago hada", meaning: "Reported speech - question (asks whether / asked if)" },
+        { korean: "-라고 하다", romanization: "-rago hada", meaning: "Reported speech - command (tells to / told to)" },
+        { korean: "-자고 하다", romanization: "-jago hada", meaning: "Reported speech - suggestion (suggests / suggested)" },
     ],
 
     "Linking Words & Expressions": [
