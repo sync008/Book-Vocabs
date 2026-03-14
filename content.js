@@ -143,7 +143,6 @@ Object.assign(flashcardData, {
         { korean: "인근", romanization: "ingeun", meaning: "Neighborhood / nearby area" },
         { korean: "하늘", romanization: "haneul", meaning: "Sky" },
         { korean: "생활하다", romanization: "saenghwalhada", meaning: "to live" },
-        { korean: "그런데", romanization: "geureonde", meaning: "however/but" },
         { korean: "알뜰하다", romanization: "altteulhada", meaning: "affordable/economical/thrifty" },
         { korean: "등록증", romanization: "deungrokjeung", meaning: "Registration card" },
         { korean: "판매하다", romanization: "panmaehada", meaning: "to sell" },
@@ -269,14 +268,15 @@ Object.assign(flashcardData, {
         { korean: "지도", romanization: "jido", meaning: "Map" },
         { korean: "사전", romanization: "sajeon", meaning: "Dictionary" },
         { korean: "영수증", romanization: "yeongsujeung", meaning: "Receipt" },
-        { korean: "귀덮개", romanization: "gwideomgae", meaning: "Ear cover" },
         { korean: "린스", romanization: "rinseu", meaning: "Conditioner" },
         { korean: "비누", romanization: "binu", meaning: "Soap" },
         { korean: "칫솔", romanization: "chitsol", meaning: "Toothbrush" },
         { korean: "치약", romanization: "chiyak", meaning: "Toothpaste" },
         { korean: "수건", romanization: "sugeon", meaning: "Towel" },
+        { korean: "목도리", romanization: "mokdori", meaning: "Scarf" },
+
+        { korean: "귀덮개", romanization: "gwideomgae", meaning: "Ear cover" },
         { korean: "면도기", romanization: "myeondogi", meaning: "Razor" },
-        { korean: "목도리", romanization: "mokdori", meaning: "Scarf" }
     ],
 
     "Words from Module (Furniture)": [
@@ -335,7 +335,7 @@ Object.assign(flashcardData, {
         { korean: "예", romanization: "ye", meaning: "example" },
         { korean: "다소", romanization: "daso", meaning: "somewhat, a bit" },
         { korean: "최근", romanization: "choegeun", meaning: "Recently" },
-        { korean: "하지만 / 다만", romanization: "hajiman / daman", meaning: "However, But" },
+        { korean: "하지만 / 다만 / 그런데", romanization: "hajiman / daman / geureonde", meaning: "However, But" },
         { korean: "계속", romanization: "gyesok", meaning: "Continuously" },
         { korean: "오랫동안", romanization: "oraetdongan", meaning: "For a long time" },
         { korean: "이상", romanization: "isang", meaning: "at least" },
@@ -1841,7 +1841,7 @@ Object.assign(flashcardData, {
         { korean: "조이다", romanization: "joida", meaning: "to tighten" },
         { korean: "풀다", romanization: "pulda", meaning: "to loosen" },
         { korean: "상태", romanization: "sangtae", meaning: "condition" },
-        { korean: "확인하다", romanization: "hwaginhada", meaning: "to confirm" },
+        { korean: "확인하다", romanization: "hwaginhada", meaning: "to confirm / to check" },
         { korean: "조립하다", romanization: "joriphada", meaning: "to assemble" },
         { korean: "단단하다", romanization: "dandanhada", meaning: "to be solid" },
         { korean: "파손되다", romanization: "pasondoeda", meaning: "to be damaged" },
