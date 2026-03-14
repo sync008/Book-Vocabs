@@ -32,6 +32,7 @@ Object.assign(flashcardData, {
         { korean: "기침을 하다", romanization: "gichimeul hada", meaning: "To Cough" },
         { korean: "영양제", romanization: "yeongyangje", meaning: "Nutritional Supplements" },
         { korean: "독립", romanization: "dongniip", meaning: "Independence" },
+        { korean: "정확하다", romanization: "jeonghwakada", meaning: "to be accurate" },
     ],
 
     "Hard Words 2": [
