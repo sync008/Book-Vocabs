@@ -377,6 +377,7 @@ Object.assign(flashcardData, {
         
         { korean: "-ㄴ/은 후에", romanization: "-n/eun hue", meaning: "After doing (past action)" },
         { korean: "-는 동안", romanization: "-neun dongan", meaning: "While / during (ongoing action)" },
+        { korean: "-는지", romanization: "-neun ji", meaning: "whether / if (indirect question or uncertainty)" },
 
         { korean: "-아/어야 하다", romanization: "-a/eo ya hada", meaning: "Must / have to (expressing obligation)" },
         { korean: "-아/어도", romanization: "-a/eo do", meaning: "Even if / even though (concession)" },
