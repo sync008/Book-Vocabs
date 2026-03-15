@@ -197,6 +197,7 @@ Object.assign(flashcardData, {
         { korean: "방법", romanization: "bangbeop", meaning: "Method / way / how to" },
         { korean: "수직", romanization: "sujik", meaning: "Vertical / perpendicular" },
         { korean: "모양", romanization: "moyang", meaning: "shape" },
+        { korean: "분리하다", romanization: "bunrihada", meaning: "to separate / to detach" },
     ],
 
     // "Additional Words (Work Life 2)": [
