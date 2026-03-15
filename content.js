@@ -196,6 +196,7 @@ Object.assign(flashcardData, {
         { korean: "순서", romanization: "sunseo", meaning: "Order / sequence / procedure" },
         { korean: "방법", romanization: "bangbeop", meaning: "Method / way / how to" },
         { korean: "수직", romanization: "sujik", meaning: "Vertical / perpendicular" },
+        { korean: "모양", romanization: "moyang", meaning: "shape" },
     ],
 
     // "Additional Words (Work Life 2)": [
@@ -353,6 +354,7 @@ Object.assign(flashcardData, {
 
     "Grammar Rules": [
         { korean: "-고 싶다", romanization: "-go sipda", meaning: "Want to + verb (express desire)" },
+        { korean: "-고 싶어하다", romanization: "-go sipeo hada", meaning: "Want to + verb (express someone else's desire)" },
         { korean: "-고 있다", romanization: "-go itda", meaning: "Currently doing (present progressive)" },
             
         { korean: "-기 때문에", romanization: "-gi ttemune", meaning: "Because (verb/adjective + reason)" },
@@ -387,6 +389,10 @@ Object.assign(flashcardData, {
         { korean: "-냐고 하다", romanization: "-nyago hada", meaning: "Reported speech - question (asks whether / asked if)" },
         { korean: "-라고 하다", romanization: "-rago hada", meaning: "Reported speech - command (tells to / told to)" },
         { korean: "-자고 하다", romanization: "-jago hada", meaning: "Reported speech - suggestion (suggests / suggested)" },
+
+        { korean: "-면", romanization: "-myeon", meaning: "If / when (conditional)" },
+        { korean: "-면서", romanization: "-myeonseo", meaning: "While doing (simultaneous actions by same subject)" },
+        { korean: "-는 중이다", romanization: "-neun jung-i-da", meaning: "In the middle of doing (action in progress)" },
     ],
 
     "Classifiers (Native)": [
@@ -1831,7 +1837,7 @@ Object.assign(flashcardData, {
         { korean: "펜치", romanization: "penchi", meaning: "pincers" },
         { korean: "니퍼", romanization: "nipeo", meaning: "nippers" },
         { korean: "스패너", romanization: "seupaeneo", meaning: "wrench" },
-        { korean: "랭기 스패너", romanization: "raenggi seupaeneo", meaning: "adjustable wrench" },
+        { korean: "멍키 스패너", romanization: "meongki seupaeneo", meaning: "adjustable wrench" },
         { korean: "토크 렌치", romanization: "tokeu renchi", meaning: "torque wrench" },
         { korean: "육각 렌치", romanization: "yukgak renchi", meaning: "hex key" },
         { korean: "파이프 렌치", romanization: "paipeu renchi", meaning: "pipe wrench" },
