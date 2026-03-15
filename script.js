@@ -89,7 +89,8 @@ let selectedCategories = []; // Array of selected category names
         "Chapter 36.2 (Shipment Management)",
         "Chapter 37.1 (Operating Machines)",
         "Chapter 37.2 (Tools and their Uses)",
-        "Chapter 38.1 (Assembly Tools and Parts)"
+        "Chapter 38.1 (Assembly Tools and Parts)",
+        "Chapter 38.2 (Assembly and Disassembly Process)"
     ];
 
 // GET REFERENCES TO HTML ELEMENTS

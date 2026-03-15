@@ -189,7 +189,7 @@ Object.assign(flashcardData, {
         { korean: "야근하다", romanization: "yageunhada", meaning: "To work overtime / to work late at night" },
         { korean: "공구", romanization: "gonggu", meaning: "Tool / work tool" },
         { korean: "갈다", romanization: "galda", meaning: "To replace / sharpen / grind / plow" },
-        { korean: "생기다", romanization: "saenggida", meaning: "To arise / appear / look like / get" },
+        // { korean: "생기다", romanization: "saenggida", meaning: "To arise / appear / look like / get" },
         { korean: "나다", romanization: "nada", meaning: "To come out / occur / happen" },
         { korean: "뚫다", romanization: "ttulda", meaning: "To pierce / drill / bore through" },
         { korean: "놓다", romanization: "noda", meaning: "To put down / place / let go / release" },
