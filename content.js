@@ -237,6 +237,7 @@ Object.assign(flashcardData, {
         { korean: "수직", romanization: "sujik", meaning: "Vertical / perpendicular" },
         { korean: "모양", romanization: "moyang", meaning: "shape" },
         { korean: "분리하다", romanization: "bunrihada", meaning: "to separate / to detach" },
+        { korean: "마치다", romanization: "machida", meaning: "to finish / to complete / to end" },
     ],
 
     // "Additional Words (Work Life 2)": [
@@ -415,8 +416,11 @@ Object.assign(flashcardData, {
         { korean: "-도록", romanization: "-dorok", meaning: "So that / in order to / until" },
         
         { korean: "-ㄴ/은 후에", romanization: "-n/eun hue", meaning: "After doing (past action)" },
+        { korean: "-나 / -(으)ㄴ + 가 보다", romanization: "-na / -(eu)n + ga bo-da", meaning: "it seems / it looks like (conjecture based on observation)" },
         { korean: "-는 동안", romanization: "-neun dongan", meaning: "While / during (ongoing action)" },
         { korean: "-는지", romanization: "-neun ji", meaning: "whether / if (indirect question or uncertainty)" },
+        { korean: "-는 중이다", romanization: "-neun jung-i-da", meaning: "In the middle of doing (action in progress)" },
+        { korean: "-는 대신에", romanization: "-neun dae-sin-e", meaning: "instead of / in place of" },
 
         { korean: "-아/어야 하다", romanization: "-a/eo ya hada", meaning: "Must / have to (expressing obligation)" },
         { korean: "-아/어도", romanization: "-a/eo do", meaning: "Even if / even though (concession)" },
@@ -436,8 +440,6 @@ Object.assign(flashcardData, {
         { korean: "-면 되다", romanization: "-myeon doeda", meaning: "All you have to do is / It's okay if you + verb (express sufficiency)" },
 
         { korean: "-것 같다", romanization: "-geot gatda", meaning: "It seems like / I think that + verb (express assumption or guess)" },
-
-        { korean: "-는 중이다", romanization: "-neun jung-i-da", meaning: "In the middle of doing (action in progress)" },
     ],
 
     "Classifiers (Native)": [

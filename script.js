@@ -92,7 +92,8 @@ let selectedCategories = []; // Array of selected category names
         "Chapter 38.1 (Assembly Tools and Parts)",
         "Chapter 38.2 (Assembly and Disassembly Process)",
         "Chapter 39.1 (Workplace Tools)",
-        "Chapter 39.2 (Cutting and Welding)"
+        "Chapter 39.2 (Cutting and Welding)",
+        "Chapter 40.1 (Mixing and Measuring)",
     ];
 ``
 // GET REFERENCES TO HTML ELEMENTS
