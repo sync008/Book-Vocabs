@@ -394,6 +394,10 @@ Object.assign(flashcardData, {
 
         { korean: "-면", romanization: "-myeon", meaning: "If / when (conditional)" },
         { korean: "-면서", romanization: "-myeonseo", meaning: "While doing (simultaneous actions by same subject)" },
+        { korean: "-면 되다", romanization: "-myeon doeda", meaning: "All you have to do is / It's okay if you + verb (express sufficiency)" },
+
+        { korean: "-것 같다", romanization: "-geot gatda", meaning: "It seems like / I think that + verb (express assumption or guess)" },
+
         { korean: "-는 중이다", romanization: "-neun jung-i-da", meaning: "In the middle of doing (action in progress)" },
     ],
 
@@ -1887,7 +1891,7 @@ Object.assign(flashcardData, {
     ],
 
     "Chapter 39.1 (Workplace Tools)": [
-        { korean: "작업용 공구", romanization: "jageomyong gonggu", meaning: "Workplace Tools" },
+        { korean: "작업용 공구", romanization: "jageobyong gonggu", meaning: "Workplace Tools" },
         { korean: "공구 종류", romanization: "gonggu jongnyu", meaning: "types of tools" },
         { korean: "망치", romanization: "mangchi", meaning: "hammer" },
         { korean: "전기 드릴", romanization: "jeongi deuril", meaning: "electric drill" },
@@ -1948,13 +1952,13 @@ Object.assign(flashcardData, {
         { korean: "전자 저울", romanization: "jeonja jeoul", meaning: "electronic scale" },
         { korean: "무게를 재다, 중량을 측정하다", romanization: "mugereul jaeda, jungnyangeul cheukjeonghada", meaning: "to weigh, to measure weight" },
         { korean: "가로", romanization: "garo", meaning: "width" },
-        { korean: "세로", romanization: "sero", meaning: "vertical length" },
+        { korean: "세로", romanization: "sero", meaning: "height / vertical length" },
         { korean: "자", romanization: "ja", meaning: "ruler" },
         { korean: "줄자", romanization: "julja", meaning: "tape measure" },
         { korean: "버니어 캘리퍼스", romanization: "beonieo kaellipeoseu", meaning: "vernier calipers" },
         { korean: "길이를 측정하다", romanization: "girireul cheukjeonghada", meaning: "to measure length" },
         { korean: "비율", romanization: "biyul", meaning: "ratio" },
-        { korean: "투입하다", romanization: "tuiphada", meaning: "to insert" }
+        { korean: "투입하다", romanization: "tuiphada", meaning: "to insert (to input / to feed in)" }
     ],
 
     "Chapter 40.2 (Product Defects)": [

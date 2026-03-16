@@ -90,9 +90,11 @@ let selectedCategories = []; // Array of selected category names
         "Chapter 37.1 (Operating Machines)",
         "Chapter 37.2 (Tools and their Uses)",
         "Chapter 38.1 (Assembly Tools and Parts)",
-        "Chapter 38.2 (Assembly and Disassembly Process)"
+        "Chapter 38.2 (Assembly and Disassembly Process)",
+        "Chapter 39.1 (Workplace Tools)",
+        "Chapter 39.2 (Cutting and Welding)"
     ];
-
+``
 // GET REFERENCES TO HTML ELEMENTS
 const categoryContainer = document.getElementById('category-container');
 const categoryButtonsDiv = document.getElementById('category-buttons');
