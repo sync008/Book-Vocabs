@@ -95,6 +95,8 @@ let selectedCategories = []; // Array of selected category names
         "Chapter 39.2 (Cutting and Welding)",
         "Chapter 40.1 (Mixing and Measuring)",
         "Chapter 40.2 (Product Defects)",
+        "Chapter 41.1 (Yarn Storage and Management)",
+        "Chapter 41.2 (Dyeing Process)",
     ];
 ``
 // GET REFERENCES TO HTML ELEMENTS
