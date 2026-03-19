@@ -97,6 +97,8 @@ let selectedCategories = []; // Array of selected category names
         "Chapter 40.2 (Product Defects)",
         "Chapter 41.1 (Yarn Storage and Management)",
         "Chapter 41.2 (Dyeing Process)",
+        "Chapter 42.1 (Furniture Making Preparations)",
+        "Chapter 42.2 (Furniture Sanding and Painting)",
     ];
 ``
 // GET REFERENCES TO HTML ELEMENTS
