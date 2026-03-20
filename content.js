@@ -2123,7 +2123,6 @@ Object.assign(flashcardData, {
         { korean: "철근 결속", romanization: "cheolgeun gyeolsok", meaning: "Rebar Reinforcement" },
         { korean: "철근", romanization: "cheolgeun", meaning: "rebar" },
         { korean: "배근하다", romanization: "baegeunhada", meaning: "to arrange rebar" },
-        { korean: "물", romanization: "mul", meaning: "water" },
         { korean: "모래", romanization: "morae", meaning: "sand" },
         { korean: "결속선", romanization: "gyeolsokseon", meaning: "binding wire" },
         { korean: "결속하다", romanization: "gyeolsokada", meaning: "to bind/tie" },
