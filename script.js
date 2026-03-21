@@ -99,6 +99,11 @@ let selectedCategories = []; // Array of selected category names
         "Chapter 41.2 (Dyeing Process)",
         "Chapter 42.1 (Furniture Making Preparations)",
         "Chapter 42.2 (Furniture Sanding and Painting)",
+        "Chapter 43.1 (Rebar Reinforcement)",
+        "Chapter 43.2 (Formwork Assembly)",
+        "Chapter 44.1 (Dredging)",
+        "Chapter 44.2 (Water Supply and Sewage Systems Construction)",
+        
     ];
 ``
 // GET REFERENCES TO HTML ELEMENTS
