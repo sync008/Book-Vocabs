@@ -127,6 +127,19 @@ Object.assign(flashcardData, {
         { korean: "전망", romanization: "jeonmang", meaning: "View" },
     ],
 
+    "Hard Words (43-44)":[
+        { korean: "마주", romanization: "maju", meaning: "face to face" },
+        { korean: "굳다", romanization: "gutda", meaning: "to harden" },
+        { korean: "거푸집을 설치하다", romanization: "geopujibeul seolchihada", meaning: "to assemble formwork" },
+        { korean: "결속선", romanization: "gyeolsokseon", meaning: "binding wire" },
+        { korean: "하중을 받다", romanization: "hajungeul batda", meaning: "to get under pressure" },
+        { korean: "체결하다", romanization: "chegyeolhada", meaning: "to bind/fasten" },
+        { korean: "타설하다", romanization: "taseolhada", meaning: "to pour concrete" },
+        { korean: "교차점", romanization: "gyochajeom", meaning: "intersection" },
+        { korean: "배근하다", romanization: "baegeunhada", meaning: "to arrange rebar" },
+        { korean: "기둥", romanization: "gidung", meaning: "column" },
+    ],
+
     "Hard Words (Work Book March 16)": [
         { korean: "출하하다", romanization: "chulhahada", meaning: "to ship" },
         { korean: "방청지", romanization: "bangcheongji", meaning: "rust-proof paper" },
@@ -2266,7 +2279,6 @@ Object.assign(flashcardData, {
         { korean: "호스로 물을 내다", romanization: "hoseuro mureul naeda", meaning: "to water with a hose" },
         { korean: "국괭이", romanization: "gukgwaengi", meaning: "pickaxe" },
         { korean: "경운기", romanization: "gyeongungi", meaning: "rotary tiller" },
-        { korean: "농작물", romanization: "nongjanmul", meaning: "crop" },
         { korean: "따다", romanization: "ttada", meaning: "to pick" },
         { korean: "뽑다", romanization: "ppopda", meaning: "to pull out" },
         { korean: "캐다", romanization: "kaeda", meaning: "to dig" },
