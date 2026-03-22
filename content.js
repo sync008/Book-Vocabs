@@ -2277,7 +2277,7 @@ Object.assign(flashcardData, {
         { korean: "거름을 주다", romanization: "georeumeul juda", meaning: "to apply fertilizer" },
         { korean: "호미", romanization: "homi", meaning: "hoe" },
         { korean: "호스로 물을 내다", romanization: "hoseuro mureul naeda", meaning: "to water with a hose" },
-        { korean: "국괭이", romanization: "gukgwaengi", meaning: "pickaxe" },
+        { korean: "곡괭이", romanization: "gokgwaengi", meaning: "pickaxe" },
         { korean: "경운기", romanization: "gyeongungi", meaning: "rotary tiller" },
         { korean: "따다", romanization: "ttada", meaning: "to pick" },
         { korean: "뽑다", romanization: "ppopda", meaning: "to pull out" },
