@@ -159,7 +159,6 @@ Object.assign(flashcardData, {
         { korean: "중량", romanization: "jungnyang", meaning: "weight" },
         { korean: "손상되다", romanization: "sonsangdoeda", meaning: "to get damaged" },
         { korean: "지시하다", romanization: "jisihada", meaning: "to instruct" },
-        { korean: "밧줄", romanization: "batjul", meaning: "rope" },
         { korean: "출하 관리", romanization: "chulha gwalli", meaning: "Shipment Management" },
         { korean: "확보하다", romanization: "hwakbohada", meaning: "to secure" },
         { korean: "녹슬다", romanization: "nokseulda", meaning: "to rust" },
@@ -422,6 +421,7 @@ Object.assign(flashcardData, {
         { korean: "-ㄹ/을까요", romanization: "-l/eulkkayo", meaning: "Shall we? / I wonder (suggestion or conjecture)" },
         { korean: "-ㄹ/을 텐데", romanization: "-l/eul tende", meaning: "I expect / probably will / it should be (expectation or assumption about a situation)" },
         { korean: "-ㄹ/을 걸요", romanization: "-l/eul geolyo", meaning: "I bet / I think / it probably is (soft conjecture or assumption)" },
+        { korean: "-(으)ㄹ까 하다", romanization: "-(eu)lkka hada", meaning: "I'm thinking of / I'm considering (expressing tentative intention or plan)" },
 
         { korean: "-지 않다", romanization: "-ji anta", meaning: "Negation (do not / does not)" },
         { korean: "-니까", romanization: "-nikka", meaning: "Because / since (giving reason or justification)" },
@@ -1837,7 +1837,6 @@ Object.assign(flashcardData, {
         { korean: "수고하다", romanization: "sugohada", meaning: "to put in effort" },
         { korean: "맞추다", romanization: "matchuda", meaning: "to adjust" },
         { korean: "떨어지다", romanization: "tteoreojida", meaning: "to fall" },
-        { korean: "밧줄", romanization: "batjul", meaning: "rope" },
         { korean: "중량", romanization: "jungnyang", meaning: "weight" },
         { korean: "주의하다", romanization: "juuihada", meaning: "to take caution" }
     ],
@@ -2235,7 +2234,6 @@ Object.assign(flashcardData, {
         { korean: "어서", romanization: "eoseo", meaning: "quickly" },
         { korean: "그동안", romanization: "geudong-an", meaning: "in the meantime" },
         { korean: "부드럽다", romanization: "budeureopda", meaning: "to be soft" },
-        { korean: "펌프", romanization: "peompeu", meaning: "pump" },
         { korean: "굳다", romanization: "gutda", meaning: "to harden" }
     ],
 
@@ -2386,13 +2384,11 @@ Object.assign(flashcardData, {
         { korean: "낚시 바늘", romanization: "naksi baneul", meaning: "fishing hook" },
         { korean: "고압 분사기", romanization: "goap bunsagi", meaning: "pressure washer" },
         { korean: "끌어올리다", romanization: "kkeureoollida", meaning: "to pull up" },
-        { korean: "세척하다", romanization: "secheokada", meaning: "to clean" },
-        { korean: "건조하다/말리다", romanization: "geonjohada/mallida", meaning: "to dry" },
+        { korean: "세척하다", romanization: "secheokada", meaning: "to clean / to wash" },
         { korean: "(그물을) 수선하다", romanization: "(geumureul) suseonhada", meaning: "to mend (a net)" },
         { korean: "갑판", romanization: "gapan", meaning: "deck" },
         { korean: "흔들리다", romanization: "heundeullida", meaning: "to be shaken" },
         { korean: "찢어지다", romanization: "jjijeojiida", meaning: "to be torn" },
-        { korean: "물고기", romanization: "mulgogi", meaning: "fish" },
     ],
 
     "Chapter 47.2 (Aquaculture)": [
