@@ -436,6 +436,7 @@ Object.assign(flashcardData, {
         { korean: "-는지", romanization: "-neun ji", meaning: "whether / if (indirect question or uncertainty)" },
         { korean: "-는 중이다", romanization: "-neun jung-i-da", meaning: "In the middle of doing (action in progress)" },
         { korean: "-는 대신에", romanization: "-neun dae-sin-e", meaning: "instead of / in place of" },
+        { korean: "-는/은 덕분에", romanization: "-neun/eun deok-bun-e", meaning: "thanks to / because of (positive reason)" },
 
         { korean: "-아/어야 하다", romanization: "-a/eo ya hada", meaning: "Must / have to (expressing obligation)" },
         { korean: "-아/어도", romanization: "-a/eo do", meaning: "Even if / even though (concession)" },
@@ -445,6 +446,7 @@ Object.assign(flashcardData, {
         { korean: "-아/어 놓다", romanization: "-a/eo noda", meaning: "To do and leave it that way (prepared state)" },
         { korean: "-아/어 주다", romanization: "-a/eo juda", meaning: "To do something for someone (favor)" },
         { korean: "아/어야겠-", romanization: "a/eo ya-gett", meaning: "Should/ought to (expressing intention or necessity)" },
+        { korean: "아/어지다", romanization: "a/eo jida", meaning: "to become / to get (indicates a change of state)" },
 
         { korean: "-다고 하다", romanization: "-dago hada", meaning: "Reported speech - statement (says that / said that)" },
         { korean: "-냐고 하다", romanization: "-nyago hada", meaning: "Reported speech - question (asks whether / asked if)" },
@@ -457,7 +459,7 @@ Object.assign(flashcardData, {
 
         { korean: "-것 같다", romanization: "-geot gatda", meaning: "It seems like / I think that + verb (express assumption or guess)" },
 
-        { korean: "-도록", romanization: "-dorok", meaning: "so that / in order to / to the extent that (express purpose, degree, or intention)" },
+        { korean: "-기로 하다", romanization: "-giro hada", meaning: "to decide to / to plan to" },
     ],
 
     "Classifiers (Native)": [
@@ -2442,7 +2444,7 @@ Object.assign(flashcardData, {
         { korean: "안전난간", romanization: "anjeonnan-gan", meaning: "safety railing" },
         { korean: "장선", romanization: "jangseon", meaning: "joist" },
         { korean: "작업발판", romanization: "jageobalpan", meaning: "work platform" },
-        { korean: "띳장", romanization: "ttitjang", meaning: "wale" },
+        { korean: "띠장", romanization: "ttijang", meaning: "wale" },
         { korean: "가새", romanization: "gasae", meaning: "brace" },
         { korean: "밑받침 철물", romanization: "mitbatchim cheolmul", meaning: "base metal fitting" },
         { korean: "밑동잡이", romanization: "mitdongjabi", meaning: "base stabilizer" },
