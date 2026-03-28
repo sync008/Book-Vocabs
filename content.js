@@ -250,6 +250,7 @@ Object.assign(flashcardData, {
         { korean: "모양", romanization: "moyang", meaning: "shape" },
         { korean: "분리하다", romanization: "bunrihada", meaning: "to separate / to detach" },
         { korean: "마치다", romanization: "machida", meaning: "to finish / to complete / to end" },
+        { korean: "손보다", romanization: "son-bo-da", meaning: "to fix / to repair / to touch up / to give someone a lesson" },
     ],
 
     // "Additional Words (Work Life 2)": [
@@ -437,6 +438,7 @@ Object.assign(flashcardData, {
         { korean: "-는 중이다", romanization: "-neun jung-i-da", meaning: "In the middle of doing (action in progress)" },
         { korean: "-는 대신에", romanization: "-neun dae-sin-e", meaning: "instead of / in place of" },
         { korean: "-는/은 덕분에", romanization: "-neun/eun deok-bun-e", meaning: "thanks to / because of (positive reason)" },
+        { korean: "-느라고", romanization: "-neurago", meaning: "because of doing / as a result of (negative or unintended consequence)" },
 
         { korean: "-아/어야 하다", romanization: "-a/eo ya hada", meaning: "Must / have to (expressing obligation)" },
         { korean: "-아/어도", romanization: "-a/eo do", meaning: "Even if / even though (concession)" },
@@ -460,6 +462,8 @@ Object.assign(flashcardData, {
         { korean: "-것 같다", romanization: "-geot gatda", meaning: "It seems like / I think that + verb (express assumption or guess)" },
 
         { korean: "-기로 하다", romanization: "-giro hada", meaning: "to decide to / to plan to" },
+
+        { korean: "-던", romanization: "-deon", meaning: "used to / recalling a past action or state (retrospective modifier)" },
     ],
 
     "Classifiers (Native)": [
