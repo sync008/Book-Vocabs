@@ -438,7 +438,7 @@ Object.assign(flashcardData, {
         { korean: "-는 중이다", romanization: "-neun jung-i-da", meaning: "In the middle of doing (action in progress)" },
         { korean: "-는 대신에", romanization: "-neun dae-sin-e", meaning: "instead of / in place of" },
         { korean: "-는/은 덕분에", romanization: "-neun/eun deok-bun-e", meaning: "thanks to / because of (positive reason)" },
-        { korean: "-느라고", romanization: "-neurago", meaning: "because of doing / as a result of (negative or unintended consequence)" },
+        { korean: "-(으)ㄴ지", romanization: "-(eu)n-ji", meaning: "since / how long it has been since — used to express elapsed time after a past event" },
 
         { korean: "-아/어야 하다", romanization: "-a/eo ya hada", meaning: "Must / have to (expressing obligation)" },
         { korean: "-아/어도", romanization: "-a/eo do", meaning: "Even if / even though (concession)" },
@@ -449,6 +449,7 @@ Object.assign(flashcardData, {
         { korean: "-아/어 주다", romanization: "-a/eo juda", meaning: "To do something for someone (favor)" },
         { korean: "아/어야겠-", romanization: "a/eo ya-gett", meaning: "Should/ought to (expressing intention or necessity)" },
         { korean: "아/어지다", romanization: "a/eo jida", meaning: "to become / to get (indicates a change of state)" },
+        { korean: "아/어야 했는데", romanization: "a/eo-ya haess-neun-de", meaning: "should have (done) / ought to have (done) — expresses regret about something that didn't happen" },
 
         { korean: "-다고 하다", romanization: "-dago hada", meaning: "Reported speech - statement (says that / said that)" },
         { korean: "-냐고 하다", romanization: "-nyago hada", meaning: "Reported speech - question (asks whether / asked if)" },
@@ -464,6 +465,8 @@ Object.assign(flashcardData, {
         { korean: "-기로 하다", romanization: "-giro hada", meaning: "to decide to / to plan to" },
 
         { korean: "-던", romanization: "-deon", meaning: "used to / recalling a past action or state (retrospective modifier)" },
+
+        { korean: "-느라고", romanization: "-neurago", meaning: "because of doing / as a result of (negative or unintended consequence)" },
     ],
 
     "Classifiers (Native)": [
