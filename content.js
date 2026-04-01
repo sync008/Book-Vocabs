@@ -2712,8 +2712,8 @@ Object.assign(flashcardData, {
         { korean: "통로", romanization: "tongno", meaning: "passage" },
         { korean: "지나가다", romanization: "jinagada", meaning: "to pass through" },
 
-        { korean: "만지지 마세요.", romanization: "manjiji maseyo.", meaning: "Do not touch." },
-        { korean: "기대지 마세요.", romanization: "gidaeji maseyo.", meaning: "Do not lean." },
+        // { korean: "만지지 마세요.", romanization: "manjiji maseyo.", meaning: "Do not touch." },
+        // { korean: "기대지 마세요.", romanization: "gidaeji maseyo.", meaning: "Do not lean." },
         // { korean: "하지 마세요.", romanization: "haji maseyo.", meaning: "Do not carry out action." },
         // { korean: "담배를 피우지 마세요.", romanization: "dambaereul piuji maseyo.", meaning: "Do not smoke." },
         // { korean: "불을 붙이지 마세요.", romanization: "bureul buchiji maseyo.", meaning: "Do not light a fire." },
