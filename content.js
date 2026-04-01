@@ -430,6 +430,7 @@ Object.assign(flashcardData, {
         { korean: "-던", romanization: "-deon", meaning: "Used to / was doing (past habit or recollection)" },
         { korean: "-겠다", romanization: "-getda", meaning: "Will / intend to / seems like (supposition or intention)" },
         { korean: "-도록", romanization: "-dorok", meaning: "So that / in order to / until" },
+        { korean: "-도록 하다", romanization: "-dorok hada", meaning: "to make sure to / to try to / to see to it that — used to express intention, instruction, or effort toward ensuring an action happens" },
         
         { korean: "-ㄴ/은 후에", romanization: "-n/eun hue", meaning: "After doing (past action)" },
         { korean: "-나 / -(으)ㄴ + 가 보다", romanization: "-na / -(eu)n + ga bo-da", meaning: "it seems / it looks like (conjecture based on observation)" },
@@ -450,6 +451,7 @@ Object.assign(flashcardData, {
         { korean: "아/어야겠-", romanization: "a/eo ya-gett", meaning: "Should/ought to (expressing intention or necessity)" },
         { korean: "아/어지다", romanization: "a/eo jida", meaning: "to become / to get (indicates a change of state)" },
         { korean: "아/어야 했는데", romanization: "a/eo-ya haess-neun-de", meaning: "should have (done) / ought to have (done) — expresses regret about something that didn't happen" },
+        { korean: "-았/었더니", romanization: "-ass-deo-ni / eoss-deo-ni", meaning: "and then / because I did — used when a past action by the speaker led to a discovered result or consequence" },
 
         { korean: "-다고 하다", romanization: "-dago hada", meaning: "Reported speech - statement (says that / said that)" },
         { korean: "-냐고 하다", romanization: "-nyago hada", meaning: "Reported speech - question (asks whether / asked if)" },
@@ -465,6 +467,8 @@ Object.assign(flashcardData, {
         { korean: "-기로 하다", romanization: "-giro hada", meaning: "to decide to / to plan to" },
 
         { korean: "-던", romanization: "-deon", meaning: "used to / recalling a past action or state (retrospective modifier)" },
+
+        
 
         { korean: "-느라고", romanization: "-neurago", meaning: "because of doing / as a result of (negative or unintended consequence)" },
     ],
@@ -2704,12 +2708,12 @@ Object.assign(flashcardData, {
         { korean: "이 승강기를 승객용으로 사용하지 마시오", romanization: "i seunggangireul seunggaengnyong-euro sayonghaji masio", meaning: "Do not use this lift for people" },
         { korean: "야외용 신발 금지", romanization: "yawoeyong sinbal geumji", meaning: "Outdoor footwear prohibited" },
         { korean: "만지지 마시오", romanization: "manjiji masio", meaning: "Do not touch" },
-        { korean: "만지지 마세요.", romanization: "manjiji maseyo.", meaning: "Do not touch." },
         { korean: "기대지 마시오", romanization: "gidaeji masio", meaning: "No leaning" },
-        { korean: "기대지 마세요.", romanization: "gidaeji maseyo.", meaning: "Do not lean." },
         { korean: "통로", romanization: "tongno", meaning: "passage" },
         { korean: "지나가다", romanization: "jinagada", meaning: "to pass through" },
 
+        { korean: "만지지 마세요.", romanization: "manjiji maseyo.", meaning: "Do not touch." },
+        { korean: "기대지 마세요.", romanization: "gidaeji maseyo.", meaning: "Do not lean." },
         // { korean: "하지 마세요.", romanization: "haji maseyo.", meaning: "Do not carry out action." },
         // { korean: "담배를 피우지 마세요.", romanization: "dambaereul piuji maseyo.", meaning: "Do not smoke." },
         // { korean: "불을 붙이지 마세요.", romanization: "bureul buchiji maseyo.", meaning: "Do not light a fire." },
