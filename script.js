@@ -103,6 +103,23 @@ let selectedCategories = []; // Array of selected category names
         "Chapter 43.2 (Formwork Assembly)",
         "Chapter 44.1 (Dredging)",
         "Chapter 44.2 (Water Supply and Sewage Systems Construction)",
+        "Chapter 45.1 (Field Crops)",
+        "Chapter 45.2 (Orchard Cultivation)",
+        "Chapter 46.1 (Feeding Livestock)",
+        "Chapter 46.2 (Barn Cleaning)",
+        "Chapter 47.1 (Fishery Tools and Activities)",
+        "Chapter 47.2 (Aquaculture)",
+        "Chapter 48.1 (Ship Painting)",
+        "Chapter 48.2 (Steel Pipe Scaffold Installation)",
+        "Chapter 49.1 (Tunnel Facilities)",
+        "Chapter 49.2 (Mining and Ore Transport Operations)",
+        "Chapter 50.1 (Trenching and Root Ball Wrapping)",
+        "Chapter 50.2 (Logging Work)",
+        "Chapter 51.1 (Hotel Supplies Room Items)",
+        "Chapter 51.2 (Room Cleaning)",
+        "Chapter 52.1 (Managing Ingredients)",
+        "Chapter 52.2 (Food Safety Management)",
+
         
     ];
 ``
