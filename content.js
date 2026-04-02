@@ -413,6 +413,7 @@ Object.assign(flashcardData, {
             
         { korean: "-기 때문에", romanization: "-gi ttemune", meaning: "Because (verb/adjective + reason)" },
         { korean: "-기 전에", romanization: "-gi jeone", meaning: "Before doing (verb)" },
+        { korean: "-기 위해", romanization: "-gi wi-hae", meaning: "In order to (informal/shorter form)" },
 
         { korean: "-ㄹ/을 수 있다", romanization: "-l/eul su itda", meaning: "Can / able to (expressing ability)" },
         { korean: "-ㄹ/을 수 없다", romanization: "-l/eul su eopda", meaning: "Cannot / unable to (expressing inability)" },
@@ -439,6 +440,7 @@ Object.assign(flashcardData, {
         { korean: "-는 중이다", romanization: "-neun jung-i-da", meaning: "In the middle of doing (action in progress)" },
         { korean: "-는 대신에", romanization: "-neun dae-sin-e", meaning: "instead of / in place of" },
         { korean: "-는/은 덕분에", romanization: "-neun/eun deok-bun-e", meaning: "thanks to / because of (positive reason)" },
+        { korean: "-는/은/ㄴ 대로", romanization: "-neun/eun/n dae-ro", meaning: "as / according to / just as (something is said, seen, or planned)" },
         { korean: "-(으)ㄴ지", romanization: "-(eu)n-ji", meaning: "since / how long it has been since — used to express elapsed time after a past event" },
 
         { korean: "-아/어야 하다", romanization: "-a/eo ya hada", meaning: "Must / have to (expressing obligation)" },
@@ -467,9 +469,6 @@ Object.assign(flashcardData, {
         { korean: "-기로 하다", romanization: "-giro hada", meaning: "to decide to / to plan to" },
 
         { korean: "-던", romanization: "-deon", meaning: "used to / recalling a past action or state (retrospective modifier)" },
-
-        
-
         { korean: "-느라고", romanization: "-neurago", meaning: "because of doing / as a result of (negative or unintended consequence)" },
     ],
 
@@ -2833,7 +2832,7 @@ Object.assign(flashcardData, {
     ],
 
     "Chapter 55.2 (Safety and Hygiene Equipment)": [
-        { korean: "특화 안전 장비", romanization: "teukhwa anjeon jangbi", meaning: "specialized safety equipment" },
+        // { korean: "특화 안전 장비", romanization: "teukhwa anjeon jangbi", meaning: "specialized safety equipment" },
         { korean: "무릎보호대", romanization: "mureupbohodae", meaning: "knee pad" },
         { korean: "구명조끼", romanization: "gumyeongokki", meaning: "life jacket" },
         { korean: "오븐 장갑", romanization: "obeun janggap", meaning: "oven mitts" },
@@ -2841,19 +2840,19 @@ Object.assign(flashcardData, {
         { korean: "방수 앞치마", romanization: "bangsu apchima", meaning: "waterproof apron" },
         { korean: "LED 램프", romanization: "LED raempeu", meaning: "led lamp" },
         { korean: "절연용 보호구", romanization: "jeoryonyong bohoggu", meaning: "insulating protective gear" },
-        { korean: "전기가 몸으로 흐르는 것을 막아 주는 장비", romanization: "jeongiga bomeur-o heureuneun geoseul maga juneun jangbi", meaning: "equipment that prevents electricity from flowing through the body" },
+        // { korean: "전기가 몸으로 흐르는 것을 막아 주는 장비", romanization: "jeongiga bomeur-o heureuneun geoseul maga juneun jangbi", meaning: "equipment that prevents electricity from flowing through the body" },
         { korean: "절연 안전모", romanization: "jeoryon anjeonmo", meaning: "insulating helmet" },
         { korean: "절연 장화", romanization: "jeoryon janghwa", meaning: "insulating boots" },
         { korean: "절연 장갑", romanization: "jeoryon janggap", meaning: "insulating gloves" },
         { korean: "방열 보호구", romanization: "bangyeol bohoggu", meaning: "heat-resistant protective equipment" },
-        { korean: "뜨거운 열로부터 몸을 보호하는 장비", romanization: "tteugeoun yeollobuteo momeul bohohaneun jangbi", meaning: "equipment that protects the body from extreme heat" },
+        // { korean: "뜨거운 열로부터 몸을 보호하는 장비", romanization: "tteugeoun yeollobuteo momeul bohohaneun jangbi", meaning: "equipment that protects the body from extreme heat" },
         { korean: "방열두건", romanization: "bangyeoldugon", meaning: "heat-resistant hood" },
         { korean: "방열상의", romanization: "bangyeolsangui", meaning: "heat-resistant jacket" },
         { korean: "방열장갑", romanization: "bangyeoljanggap", meaning: "heat-resistant gloves" },
         { korean: "방열하의", romanization: "bangyeolhaui", meaning: "heat-resistant pants" },
         { korean: "방열장화", romanization: "bangyeoljanghwa", meaning: "heat-resistant boots" },
         { korean: "위생 보호구", romanization: "wiisaeng bohoggu", meaning: "hygiene protective equipment" },
-        { korean: "나쁜 것이 작업자의 몸에 닿지 않고 작업물이 깨끗하게 유지되도록 착용하는 장비", romanization: "nappeun geosi jageokjaui bome dachji anko jageongmuri kkaekkeutage yujidoedorok chagyonghaneun jangbi", meaning: "equipment that prevents contaminants from touching the worker's body and keeps the work materials clean" },
+        // { korean: "나쁜 것이 작업자의 몸에 닿지 않고 작업물이 깨끗하게 유지되도록 착용하는 장비", romanization: "nappeun geosi jageokjaui bome dachji anko jageongmuri kkaekkeutage yujidoedorok chagyonghaneun jangbi", meaning: "equipment that prevents contaminants from touching the worker's body and keeps the work materials clean" },
         { korean: "위생복", romanization: "wiisaengbok", meaning: "sanitary clothing" },
         { korean: "위생장갑", romanization: "wiisaengjanggap", meaning: "sanitary gloves" },
         { korean: "위생장화", romanization: "wiisaengjanghwa", meaning: "sanitary boots" },
