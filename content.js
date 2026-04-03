@@ -423,6 +423,7 @@ Object.assign(flashcardData, {
         { korean: "-ㄹ/을까요", romanization: "-l/eulkkayo", meaning: "Shall we? / I wonder (suggestion or conjecture)" },
         { korean: "-ㄹ/을 텐데", romanization: "-l/eul tende", meaning: "I expect / probably will / it should be (expectation or assumption about a situation)" },
         { korean: "-ㄹ/을 걸요", romanization: "-l/eul geolyo", meaning: "I bet / I think / it probably is (soft conjecture or assumption)" },
+        { korean: "-을/ㄹ 테니까", romanization: "-eul/l tenikka", meaning: "since I will / because it will (so do something or expect a result)" },
         { korean: "-(으)ㄹ까 하다", romanization: "-(eu)lkka hada", meaning: "I'm thinking of / I'm considering (expressing tentative intention or plan)" },
 
         { korean: "-지 않다", romanization: "-ji anta", meaning: "Negation (do not / does not)" },
@@ -2926,7 +2927,6 @@ Object.assign(flashcardData, {
     "Chapter 56.2 (Emergency Response Guidelines)": [
         { korean: "사고 대응 요령", romanization: "sago daeeung yoryang", meaning: "accident response guidelines" },
         { korean: "관리감독자, 상급자에게 보고하기", romanization: "gwanlligamdokja, sanggeupjae-ge bogohagi", meaning: "report to the supervisor or superior" },
-        { korean: "소방서(119), 경찰서(112)에 신고하기", romanization: "sobangseo(119), gyeongchalseo(112)e singohagi", meaning: "report to the fire department (119) or police (112)" },
         { korean: "사고 발생", romanization: "sago balsaeng", meaning: "accident occurs" },
         { korean: "작업 중지 및 긴급 대피", romanization: "jageop jungji mit gingeup daepi", meaning: "stop work and urgently evacuate" },
         { korean: "신고 및 응급조치", romanization: "singo mit eunggeupjochi", meaning: "report and take emergency measures" },
@@ -2942,9 +2942,7 @@ Object.assign(flashcardData, {
         { korean: "응급 상황이 생겼을 때", romanization: "eunggeup sanghwangi saenggyeosseul ttae", meaning: "when an emergency occurs" },
         { korean: "상태 파악하기", romanization: "sangtae paaakhagi", meaning: "assess the situation" },
         { korean: "도움 요청하기", romanization: "doum yocheongaji", meaning: "call for help" },
-        { korean: "소방서(119)에 신고하기", romanization: "sobangseo(119)e singohagi", meaning: "report to the fire department (119)" },
         { korean: "응급 처치하기", romanization: "eunggeup cheochihagi", meaning: "administer first aid" },
-        { korean: "소방서(119) 신고 방법", romanization: "sobangseo(119) singo bangbeop", meaning: "how to report to the fire department (119)" },
         { korean: "응급 상황에 대해 설명하기", romanization: "eunggeup sanghwange daehae seolmyeonghagi", meaning: "explain the emergency" },
         { korean: "사건이 발생한 주소 말하기", romanization: "sageni balsaenghan juso malhagi", meaning: "say the address where the accident occurred" },
         { korean: "신고 후 다른 사람과 통화하지 않기", romanization: "singo hu dareun saramgwa tonghwahaji anki", meaning: "after reporting, don't phone other people" },
