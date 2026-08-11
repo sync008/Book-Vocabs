@@ -639,3 +639,20 @@ darkModeToggle.addEventListener('click', function() {
         localStorage.setItem('darkMode', 'disabled');
     }
 });
+
+// KEYBOARD NAVIGATION
+document.addEventListener('keydown', function(e) {
+    // Only respond when the flashcard area is actually showing
+    if (flashcardArea.classList.contains('hidden')) return;
+
+    // Don't hijack arrow keys while typing in the search box
+    if (document.activeElement.tagName === 'INPUT') return;
+
+    if (e.key === 'ArrowRight') {
+        e.preventDefault();
+        nextBtn.click(); // same action as clicking Next
+    } else if (e.key === 'ArrowDown') {
+        e.preventDefault();
+        flashcard.click(); // same action as clicking the card to flip it
+    }
+});
