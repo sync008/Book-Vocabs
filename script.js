@@ -651,6 +651,9 @@ document.addEventListener('keydown', function(e) {
     if (e.key === 'ArrowRight') {
         e.preventDefault();
         nextBtn.click(); // same action as clicking Next
+    } else if (e.key === 'ArrowLeft') {
+        e.preventDefault();
+        prevBtn.click(); // same action as clicking Previous
     } else if (e.key === 'ArrowDown') {
         e.preventDefault();
         flashcard.click(); // same action as clicking the card to flip it
