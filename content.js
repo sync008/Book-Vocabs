@@ -431,80 +431,500 @@ Object.assign(flashcardData, {
         { korean: "-차", romanization: "cha", meaning: "Order / sequence. Sino number + cha " },
     ],
 
-    "Grammar Rules": [
-        { korean: "-고 싶다", romanization: "-go sipda", meaning: "Want to + verb (express desire)" },
-        { korean: "-고 싶어하다", romanization: "-go sipeo hada", meaning: "Want to + verb (express someone else's desire)" },
-        { korean: "-고 있다", romanization: "-go itda", meaning: "Currently doing (present progressive)" },
-            
-        { korean: "-기 때문에", romanization: "-gi ttemune", meaning: "Because (verb/adjective + reason)" },
-        { korean: "-기 전에", romanization: "-gi jeone", meaning: "Before doing (verb)" },
-        { korean: "-기 위해", romanization: "-gi wi-hae", meaning: "In order to (informal/shorter form)" },
-        { korean: "-게 되다", romanization: "-ge doe-da", meaning: "to end up (doing) / to come to (do) / to eventually become (a situation where...)" },
+// 한국어 문법 카드 데이터 (Korean Grammar Flashcard Data)
+// Book 1: 일상생활 한국어 (Daily Life Korean) — Ch. 1–30
+// Book 2: 직장생활 한국어 (Work Life Korean) — Ch. 31–60
+//
+// Each entry follows the same shape as the original "Grammar Rules" array,
+// with an added "usage" field spelling out WHICH form to use and when —
+// e.g. patchim (받침, final consonant) vs. no-patchim, vowel harmony, etc.
+// "chapter" and "title" tie each entry back to the textbook table you attached.
 
-        { korean: "-ㄹ/을 수 있다", romanization: "-l/eul su itda", meaning: "Can / able to (expressing ability)" },
-        { korean: "-ㄹ/을 수 없다", romanization: "-l/eul su eopda", meaning: "Cannot / unable to (expressing inability)" },
-        { korean: "-ㄹ/을 것이다", romanization: "-l/eul geosida", meaning: "Will / going to (future tense)" },
-        { korean: "-ㄹ/을 때", romanization: "-l/eul ttae", meaning: "When / at the time of (verb/adjective)" },
-        { korean: "-ㄹ/을게요", romanization: "-l/eulgeyo", meaning: "I will (promise or intention)" },
-        { korean: "-ㄹ/을까요", romanization: "-l/eulkkayo", meaning: "Shall we? / I wonder (suggestion or conjecture)" },
-        { korean: "-ㄹ/을 텐데", romanization: "-l/eul tende", meaning: "I expect / probably will / it should be (expectation or assumption about a situation)" },
-        { korean: "-ㄹ/을 걸요", romanization: "-l/eul geolyo", meaning: "I bet / I think / it probably is (soft conjecture or assumption)" },
-        { korean: "-을/ㄹ 테니까", romanization: "-eul/l tenikka", meaning: "since I will / because it will (so do something or expect a result)" },
-        { "korean": "-ㄹ/을 뻔하다", "romanization": "-l/eul ppeonhada", "meaning": "Almost did / nearly happened" },
-        { korean: "-(으)ㄹ까 하다", romanization: "-(eu)lkka hada", meaning: "I'm thinking of / I'm considering (expressing tentative intention or plan)" },
+    "grammarRules": [
 
-        { korean: "-지 않다", romanization: "-ji anta", meaning: "Negation (do not / does not)" },
-        { korean: "-니까", romanization: "-nikka", meaning: "Because / since (giving reason or justification)" },
-        { korean: "-지만", romanization: "-jiman", meaning: "But / however (contrast)" },
-        { korean: "-던", romanization: "-deon", meaning: "Used to / was doing (past habit or recollection)" },
-        { korean: "-겠다", romanization: "-getda", meaning: "Will / intend to / seems like (supposition or intention)" },
-        { korean: "-도록", romanization: "-dorok", meaning: "So that / in order to / until" },
-        { korean: "-도록 하다", romanization: "-dorok hada", meaning: "to make sure to / to try to / to see to it that — used to express intention, instruction, or effort toward ensuring an action happens" },
-        
-        { korean: "-ㄴ/은 후에", romanization: "-n/eun hue", meaning: "After doing (past action)" },
-        { korean: "-나 / -(으)ㄴ + 가 보다", romanization: "-na / -(eu)n + ga bo-da", meaning: "it seems / it looks like (conjecture based on observation)" },
-        { korean: "-는 동안", romanization: "-neun dongan", meaning: "While / during (ongoing action)" },
-        { korean: "-는지", romanization: "-neun ji", meaning: "whether / if (indirect question or uncertainty)" },
-        { korean: "-는 중이다", romanization: "-neun jung-i-da", meaning: "In the middle of doing (action in progress)" },
-        { korean: "-는 대신에", romanization: "-neun dae-sin-e", meaning: "instead of / in place of" },
-        { korean: "-는/은 덕분에", romanization: "-neun/eun deok-bun-e", meaning: "thanks to / because of (positive reason)" },
-        { "korean": "-는 바람에", "romanization": "-neun ba-ram-e", "meaning": "Because of / Due to (used when something causes an unexpected or negative result)" },
-        { korean: "-는/은/ㄴ 대로", romanization: "-neun/eun/n dae-ro", meaning: "as / according to / just as (something is said, seen, or planned)" },
-        { korean: "-는/은/ㄴ 줄 알았다/몰랐다", romanization: "-neun/eun/n jul al-ass-da/mol-lass-da", meaning: "thought that (something was the case) / didn't know that (something was the case)" },
-        { korean: "-(으)ㄴ지", romanization: "-(eu)n-ji", meaning: "since / how long it has been since — used to express elapsed time after a past event" },
+    // ===================== BOOK 1 — 일상생활 한국어 =====================
 
-        { korean: "-아/어야 하다", romanization: "-a/eo ya hada", meaning: "Must / have to (expressing obligation)" },
-        { korean: "-아/어도", romanization: "-a/eo do", meaning: "Even if / even though (concession)" },
-        { korean: "-아/어 보다", romanization: "-a/eo boda", meaning: "To try doing something" },
-        { korean: "-아/어서", romanization: "-a/eo seo", meaning: "Because / so (reason or sequential action)" },
-        { korean: "-아/어요", romanization: "-a/eo yo", meaning: "Polite present tense ending" },
-        { korean: "-아/어 놓다", romanization: "-a/eo noda", meaning: "To do and leave it that way (prepared state)" },
-        { korean: "-아/어 주다", romanization: "-a/eo juda", meaning: "To do something for someone (favor)" },
-        { korean: "아/어야겠-", romanization: "a/eo ya-gett", meaning: "Should/ought to (expressing intention or necessity)" },
-        { korean: "아/어지다", romanization: "a/eo jida", meaning: "to become / to get (indicates a change of state)" },
-        { korean: "아/어야 했는데", romanization: "a/eo-ya haess-neun-de", meaning: "should have (done) / ought to have (done) — expresses regret about something that didn't happen" },
-        { korean: "-았/었더니", romanization: "-ass-deo-ni / eoss-deo-ni", meaning: "and then / because I did — used when a past action by the speaker led to a discovered result or consequence" },
+    // Ch.1 자기소개 (Self-Introduction)
+    { chapter: 1, title: "자기소개", korean: "입니다, 입니까?", romanization: "-imnida, -imnikka?",
+        meaning: "Formal 'to be' — statement / question (very polite, formal speech level)",
+        usage: "Attaches directly to a noun regardless of patchim: 학생입니다 (I am a student), 선생님입니까? (Are you a teacher?)" },
+    { chapter: 1, title: "자기소개", korean: "은/는", romanization: "-eun/neun",
+        meaning: "Topic particle — marks the topic of the sentence ('as for ~')",
+        usage: "은 after a noun ending in a consonant (patchim): 이름은 (name); 는 after a noun ending in a vowel (no patchim): 저는 (as for me)" },
 
-        { korean: "-다고 하다", romanization: "-dago hada", meaning: "Reported speech - statement (says that / said that)" },
-        { korean: "-냐고 하다", romanization: "-nyago hada", meaning: "Reported speech - question (asks whether / asked if)" },
-        { korean: "-라고 하다", romanization: "-rago hada", meaning: "Reported speech - command (tells to / told to)" },
-        { korean: "-자고 하다", romanization: "-jago hada", meaning: "Reported speech - suggestion (suggests / suggested)" },
+    // Ch.2 생활용품 (Daily Necessities)
+    { chapter: 2, title: "생활용품", korean: "이에요/예요", romanization: "-ieyo/yeyo",
+        meaning: "Informal polite 'to be' (statement/question, softer than 입니다)",
+        usage: "이에요 after a noun with patchim: 책이에요 (It's a book); 예요 after a noun with no patchim: 의자예요 (It's a chair)" },
+    { chapter: 2, title: "생활용품", korean: "이/가 아니에요", romanization: "-i/ga anieyo",
+        meaning: "'Is not' — negation of a noun predicate",
+        usage: "이 after patchim: 이게 컵이 아니에요 (This isn't a cup); 가 after no patchim: 의자가 아니에요 (It isn't a chair)" },
 
-        { korean: "-면", romanization: "-myeon", meaning: "If / when (conditional)" },
-        { korean: "-면서", romanization: "-myeonseo", meaning: "While doing (simultaneous actions by same subject)" },
-        { korean: "-면 되다", romanization: "-myeon doeda", meaning: "All you have to do is / It's okay if you + verb (express sufficiency)" },
-        { korean: "-면/으면 좋겠다", romanization: "-myeon/eu-myeon joh-gess-da", meaning: "I wish / I hope / it would be nice if..." },
+    // Ch.3 위치와 장소 (Locations and Places)
+    { chapter: 3, title: "위치와 장소", korean: "이/가 있어요, 없어요", romanization: "-i/ga isseoyo, eopseoyo",
+        meaning: "'There is/are' or 'to have' / 'there isn't/aren't' (existence, possession, location)",
+        usage: "이 after patchim: 연필이 있어요; 가 after no patchim: 의자가 없어요" },
+    { chapter: 3, title: "위치와 장소", korean: "에 (장소)", romanization: "-e (jangso)",
+        meaning: "Location particle — 'at/in/on' a static place",
+        usage: "Attaches directly to any place noun, no patchim rule: 학교에 있어요 (It's at school)" },
 
-        { korean: "-것 같다", romanization: "-geot gatda", meaning: "It seems like / I think that + verb (express assumption or guess)" },
+    // Ch.4 동작과 사물 (Actions and Objects)
+    { chapter: 4, title: "동작과 사물", korean: "-아요/어요", romanization: "-ayo/eoyo",
+        meaning: "Present tense, informal polite sentence ending",
+        usage: "아요 when the stem's last vowel is ㅏ or ㅗ: 가다→가요, 오다→와요; 어요 for all other vowels: 먹다→먹어요; 하다 → 해요 (irregular)" },
+    { chapter: 4, title: "동작과 사물", korean: "을/를", romanization: "-eul/reul",
+        meaning: "Object particle — marks the direct object",
+        usage: "을 after a noun with patchim: 밥을 먹어요; 를 after a noun with no patchim: 사과를 먹어요" },
 
-        { korean: "-기로 하다", romanization: "-giro hada", meaning: "to decide to / to plan to" },
+    // Ch.5 날짜와 요일 (Dates and Days)
+    { chapter: 5, title: "날짜와 요일", korean: "에 (시간)", romanization: "-e (sigan)",
+        meaning: "Time particle — 'at/on/in' a point in time",
+        usage: "Attaches directly to the time noun, no patchim rule: 월요일에 (on Monday), 세 시에 (at 3 o'clock)" },
+    { chapter: 5, title: "날짜와 요일", korean: "-았/었-", romanization: "-at-/eot-",
+        meaning: "Past tense marker, inserted before the sentence ending",
+        usage: "았 when the stem's last vowel is ㅏ or ㅗ: 가다→갔어요; 었 for all other vowels: 먹다→먹었어요; 하다 → 했어요" },
 
-        { "korean": "-으려면/-려면", "romanization": "-eu-ryeo-myeon / -ryeo-myeon", "meaning": "If you intend to / If you want to / In order to (states a condition for achieving a goal)" },
-        { korean: "-던", romanization: "-deon", meaning: "used to / recalling a past action or state (retrospective modifier)" },
-        { korean: "-느라고", romanization: "-neurago", meaning: "because of doing / as a result of (negative or unintended consequence)" },
-        { "korean": "-자마자", "romanization": "-jamaja", "meaning": "As soon as / immediately after" },
-        { "korean": "-자마자", "romanization": "-jamaja", "meaning": "As soon as / immediately after" },
-        { "korean": "-더라도", "romanization": "-deorado", "meaning": "Even if / Even though / Regardless of" }
+    // Ch.6 하루 일과 (Daily Routine)
+    { chapter: 6, title: "하루 일과", korean: "-(스)ㅂ니다, -(스)ㅂ니까?", romanization: "-(seu)mnida, -(seu)mnikka?",
+        meaning: "Formal statement / question ending (formal speech level, used in news, presentations, military)",
+        usage: "ㅂ니다 after a vowel-ending stem: 가다→갑니다; 습니다 after a consonant-ending stem: 먹다→먹습니다" },
+    { chapter: 6, title: "하루 일과", korean: "에서", romanization: "-eseo",
+        meaning: "Particle marking the location where an action takes place ('at/in'), or 'from' a place",
+        usage: "Attaches directly to the place noun, no patchim rule: 집에서 공부해요 (I study at home)" },
+
+    // Ch.7 계절과 날씨 (Seasons and Weather)
+    { chapter: 7, title: "계절과 날씨", korean: "'ㅂ' 불규칙 활용", romanization: "'b' bulgyu-chik hwaryong",
+        meaning: "ㅂ-irregular conjugation: stems ending in ㅂ often change ㅂ→우 before a vowel-starting ending",
+        usage: "덥다 (hot) + 어요 → 더워요 (NOT 덥어요); 춥다→추워요, 어렵다→어려워요. Note: 돕다/곱다 change ㅂ→오 (도와요, 고와요)" },
+    { chapter: 7, title: "계절과 날씨", korean: "안", romanization: "an",
+        meaning: "Negation adverb — 'not', short-form negation",
+        usage: "Placed directly before the verb/adjective: 안 가요 (I'm not going), 안 추워요 (It's not cold)" },
+
+    // Ch.8 가족과 친구 (Family and Friends)
+    { chapter: 8, title: "가족과 친구", korean: "-(으)시-", romanization: "-(eu)si-",
+        meaning: "Subject honorific marker — shows respect toward the subject of the sentence",
+        usage: "으시 after a consonant-ending stem: 읽다→읽으세요; 시 after a vowel-ending stem: 가다→가세요" },
+    { chapter: 8, title: "가족과 친구", korean: "-고", romanization: "-go",
+        meaning: "Connective ending — 'and' (listing actions/states, or sequence)",
+        usage: "Attaches directly to the verb stem regardless of patchim: 먹고, 가고" },
+
+    // Ch.9 음식 주문 (Ordering Food)
+    { chapter: 9, title: "음식 주문", korean: "주세요", romanization: "juseyo",
+        meaning: "'Please give me ~' — polite request for an object",
+        usage: "Noun + 주세요: 물 주세요 (Water, please); no patchim distinction needed since it follows a noun + (을/를) or directly" },
+    { chapter: 9, title: "음식 주문", korean: "하고", romanization: "hago",
+        meaning: "Particle — 'and / with' (connecting nouns)",
+        usage: "Attaches directly to a noun regardless of patchim: 빵하고 우유 (bread and milk)" },
+
+    // Ch.10 물건 구입 (Shopping)
+    { chapter: 10, title: "물건 구입", korean: "-네요", romanization: "-neyo",
+        meaning: "Exclamatory ending — expresses noticing/realizing something ('Oh, it's ~!')",
+        usage: "Attaches to the present-tense stem: 비싸네요! (Oh, it's expensive!)" },
+    { chapter: 10, title: "물건 구입", korean: "-아/어 주세요", romanization: "-a/eo juseyo",
+        meaning: "'Please do ~ (for me)' — polite request for an action",
+        usage: "아 주세요 when stem's last vowel is ㅏ/ㅗ: 사 주세요; 어 주세요 otherwise: 읽어 주세요" },
+
+    // Ch.11 집안일 (Household Chores)
+    { chapter: 11, title: "집안일", korean: "-아야/어야 되다", romanization: "-aya/eoya doeda",
+        meaning: "'Must/have to' — obligation or necessity",
+        usage: "아야 되다 when stem vowel is ㅏ/ㅗ: 가야 돼요; 어야 되다 otherwise: 먹어야 돼요" },
+    { chapter: 11, title: "집안일", korean: "-(으)ㄹ게요", romanization: "-(eu)lgeyo",
+        meaning: "'I will ~' — speaker's promise or intention",
+        usage: "ㄹ게요 after a vowel-ending stem: 갈게요; 을게요 after a consonant-ending stem: 먹을게요" },
+
+    // Ch.12 대중교통 (Public Transportation)
+    { chapter: 12, title: "대중교통", korean: "(으)로 (수단)", romanization: "-(eu)ro (sudan)",
+        meaning: "Particle marking means/method — 'by/with (a means of transport or tool)'",
+        usage: "로 after a vowel or ㄹ-patchim noun: 버스로 (vowel), 지하철로 (ㄹ-patchim); 으로 after any other consonant-ending noun: 자전거로... e.g. 택시로 (vowel)→로, 버스는 vowel too; 대중교통으로 (consonant)→으로" },
+    { chapter: 12, title: "대중교통", korean: "-아서/어서 (이유)", romanization: "-aseo/eoseo (iyu)",
+        meaning: "'Because / so' — gives a reason for the following clause",
+        usage: "아서 when stem vowel is ㅏ/ㅗ: 바빠서; 어서 otherwise: 막혀서" },
+
+    // Ch.13 주말 활동 (Weekend Activities)
+    { chapter: 13, title: "주말 활동", korean: "-(으)ㄹ 거예요", romanization: "-(eu)l geoyeyo",
+        meaning: "Future tense / intention — 'will / going to'",
+        usage: "ㄹ 거예요 after a vowel-ending stem: 갈 거예요; 을 거예요 after a consonant-ending stem: 먹을 거예요" },
+    { chapter: 13, title: "주말 활동", korean: "못", romanization: "mot",
+        meaning: "Negation adverb — 'cannot' (inability, not just unwillingness)",
+        usage: "Placed directly before the verb: 못 가요 (I can't go)" },
+
+    // Ch.14 길 찾기 (Getting Directions)
+    { chapter: 14, title: "길 찾기", korean: "(으)로 (방향)", romanization: "-(eu)ro (banghyang)",
+        meaning: "Particle marking direction — 'toward'",
+        usage: "로 after a vowel or ㄹ-patchim noun: 오른쪽으로 is consonant→으로; 왼쪽으로 also 으로. 여기로 (vowel)→로" },
+    { chapter: 14, title: "길 찾기", korean: "-(으)세요", romanization: "-(eu)seyo",
+        meaning: "Polite imperative — 'please do ~'",
+        usage: "세요 after a vowel-ending stem: 가세요; 으세요 after a consonant-ending stem: 앉으세요" },
+
+    // Ch.15 옷차림 (Clothing)
+    { chapter: 15, title: "옷차림", korean: "-고 있다 (상태)", romanization: "-go itda (state)",
+        meaning: "'To be wearing / to be in a state of ~' — used with clothing verbs (입다, 쓰다, 신다, 끼다) to describe a worn state",
+        usage: "Attaches to the verb stem regardless of patchim: 모자를 쓰고 있어요 (He is wearing a hat)" },
+    { chapter: 15, title: "옷차림", korean: "-(으)ㄴ", romanization: "-(eu)n",
+        meaning: "Adnominal ending — modifies a noun with a state/completed action (like an adjective clause)",
+        usage: "ㄴ after a vowel-ending stem: 예쁜 (pretty ~); 은 after a consonant-ending stem: 작은 (small ~)" },
+
+    // Ch.16 집 구하기 (Finding a House)
+    { chapter: 16, title: "집 구하기", korean: "-고 싶다", romanization: "-go sipda",
+        meaning: "'Want to ~' (speaker's own desire)",
+        usage: "Attaches directly to the verb stem: 살고 싶어요 (I want to live)" },
+    { chapter: 16, title: "집 구하기", korean: "-지만", romanization: "-jiman",
+        meaning: "'But / however' — contrast between two clauses",
+        usage: "Attaches directly to the stem regardless of patchim: 작지만 깨끗해요 (It's small but clean)" },
+
+    // Ch.17 휴가 (Vacation)
+    { chapter: 17, title: "휴가", korean: "-(으)ㄹ 때", romanization: "-(eu)l ttae",
+        meaning: "'When ~' — at the time that something happens",
+        usage: "ㄹ 때 after a vowel-ending stem: 갈 때; 을 때 after a consonant-ending stem: 먹을 때" },
+    { chapter: 17, title: "휴가", korean: "-(으)려고 하다", romanization: "-(eu)ryeogo hada",
+        meaning: "'Intend to / plan to ~'",
+        usage: "려고 하다 after a vowel-ending stem: 가려고 해요; 으려고 하다 after a consonant-ending stem: 먹으려고 해요" },
+
+    // Ch.18 취미 (Hobbies)
+    { chapter: 18, title: "취미", korean: "-는 것", romanization: "-neun geot",
+        meaning: "Nominalizer — 'the act/fact of ~ing', turns a verb clause into a noun phrase",
+        usage: "Attaches to the present-tense verb stem regardless of patchim: 책 읽는 것을 좋아해요 (I like reading books)" },
+    { chapter: 18, title: "취미", korean: "-(으)ㄹ까요?", romanization: "-(eu)lkkayo?",
+        meaning: "'Shall we ~? / I wonder ~' — suggestion or soft conjecture",
+        usage: "ㄹ까요 after a vowel-ending stem: 갈까요?; 을까요 after a consonant-ending stem: 먹을까요?" },
+
+    // Ch.19 요리 (Cooking)
+    { chapter: 19, title: "요리", korean: "-아/어 보다", romanization: "-a/eo boda",
+        meaning: "'To try doing ~'",
+        usage: "아 보다 when stem vowel is ㅏ/ㅗ: 가 보다; 어 보다 otherwise: 먹어 보다" },
+    { chapter: 19, title: "요리", korean: "-아서/어서 (순차)", romanization: "-aseo/eoseo (sequential)",
+        meaning: "'And then' — sequential connective, the second action follows/depends on the first",
+        usage: "아서 when stem vowel is ㅏ/ㅗ: 만나서 (meet and then); 어서 otherwise: 씻어서 (wash and then)" },
+
+    // Ch.20 인터넷과 스마트폰 (Internet & Smartphones)
+    { chapter: 20, title: "인터넷과 스마트폰", korean: "-고 있다 (진행)", romanization: "-go itda (progressive)",
+        meaning: "Present progressive — 'is/am/are doing ~'",
+        usage: "Attaches to the verb stem regardless of patchim: 보고 있어요 (I am watching)" },
+    { chapter: 20, title: "인터넷과 스마트폰", korean: "-(으)ㄹ래요", romanization: "-(eu)llaeyo",
+        meaning: "'I want to / I will ~' — informal statement of personal intention, often used to ask the listener's intention too",
+        usage: "ㄹ래요 after a vowel-ending stem: 갈래요; 을래요 after a consonant-ending stem: 먹을래요" },
+
+    // Ch.21 병원 (Hospital)
+    { chapter: 21, title: "병원", korean: "-(으)면", romanization: "-(eu)myeon",
+        meaning: "'If / when ~' — conditional clause",
+        usage: "면 after a vowel-ending stem: 아프면; 으면 after a consonant-ending stem: 먹으면" },
+    { chapter: 21, title: "병원", korean: "-지 마세요", romanization: "-ji maseyo",
+        meaning: "'Please don't ~' — polite prohibition",
+        usage: "Attaches directly to the verb stem regardless of patchim: 걱정하지 마세요" },
+
+    // Ch.22 약국 (Pharmacy)
+    { chapter: 22, title: "약국", korean: "-(으)니까", romanization: "-(eu)nikka",
+        meaning: "'Because / since ~' — reason, often followed by a suggestion or command",
+        usage: "니까 after a vowel-ending stem: 아프니까; 으니까 after a consonant-ending stem: 먹으니까" },
+    { chapter: 22, title: "약국", korean: "-(으)ㄴ 후에", romanization: "-(eu)n hue",
+        meaning: "'After doing ~'",
+        usage: "ㄴ 후에 after a vowel-ending stem: 간 후에 (after going); 은 후에 after a consonant-ending stem: 먹은 후에 (after eating)" },
+
+    // Ch.23 우체국 (Post Office)
+    { chapter: 23, title: "우체국", korean: "-는데/(으)ㄴ데 (배경)", romanization: "-neunde/(eu)nde (background)",
+        meaning: "'And / but ~' — sets up background information before the main statement",
+        usage: "는데 with verbs (any patchim): 가는데; ㄴ데 with adjectives + vowel stem: 예쁜데; 은데 with adjectives + consonant stem: 작은데" },
+    { chapter: 23, title: "우체국", korean: "-지요?", romanization: "-jiyo?",
+        meaning: "'~, right? / isn't it?' — confirms something the speaker already believes",
+        usage: "Attaches directly to the stem regardless of patchim: 비싸지요?" },
+
+    // Ch.24 은행 (Bank)
+    { chapter: 24, title: "은행", korean: "-(으)려고", romanization: "-(eu)ryeogo",
+        meaning: "'In order to / intending to ~', followed by another clause showing the action taken for that purpose",
+        usage: "려고 after a vowel-ending stem: 만나려고; 으려고 after a consonant-ending stem: 찾으려고" },
+    { chapter: 24, title: "은행", korean: "-(으)면 되다", romanization: "-(eu)myeon doeda",
+        meaning: "'All you need to do is ~ / it's fine if you ~' — expresses sufficiency",
+        usage: "면 되다 after a vowel-ending stem: 쓰면 돼요; 으면 되다 after a consonant-ending stem: 넣으면 돼요" },
+
+    // Ch.25 외국인 근로자 지원 기관 (Foreign Worker Support Center)
+    { chapter: 25, title: "외국인 근로자 지원 기관", korean: "-(으)러", romanization: "-(eu)reo",
+        meaning: "'In order to ~ (go/come)' — purpose, used only with movement verbs like 가다/오다",
+        usage: "러 after a vowel-ending stem: 사러 가요; 으러 after a consonant-ending stem: 먹으러 가요" },
+    { chapter: 25, title: "외국인 근로자 지원 기관", korean: "-기 때문에", romanization: "-gi ttaemune",
+        meaning: "'Because ~' — states a reason, cannot be followed directly by a command/suggestion",
+        usage: "Attaches directly to the stem regardless of patchim: 바쁘기 때문에" },
+
+    // Ch.26 한국의 주거 문화와 음식 문화
+    { chapter: 26, title: "한국의 주거 문화와 음식 문화", korean: "-아도/어도 되다", romanization: "-ado/eodo doeda",
+        meaning: "'May / it's okay to ~' — asking or granting permission",
+        usage: "아도 되다 when stem vowel is ㅏ/ㅗ: 가도 돼요; 어도 되다 otherwise: 먹어도 돼요" },
+    { chapter: 26, title: "한국의 주거 문화와 음식 문화", korean: "-는데/(으)ㄴ데 (대조)", romanization: "-neunde/(eu)nde (contrast)",
+        meaning: "'But / while ~' — contrasts two clauses (same form as background 는데, contrastive nuance)",
+        usage: "는데 with verbs: 좋아하는데; ㄴ데/은데 with adjectives depending on patchim: 큰데 (vowel), 작은데 (consonant)" },
+
+    // Ch.27 한국의 기념일 (Commemorative Days)
+    { chapter: 27, title: "한국의 기념일", korean: "-는", romanization: "-neun",
+        meaning: "Adnominal ending — present-tense modifier for verbs (modifies a following noun)",
+        usage: "Attaches to the verb stem regardless of patchim: 먹는 사람 (the person who eats), 가는 사람" },
+    { chapter: 27, title: "한국의 기념일", korean: "-아/어 봤다", romanization: "-a/eo bwatda",
+        meaning: "'Have tried doing ~ / have done ~ before' — past experience",
+        usage: "아 봤다 when stem vowel is ㅏ/ㅗ: 가 봤어요; 어 봤다 otherwise: 먹어 봤어요" },
+
+    // Ch.28 한국의 명절 (Traditional Holidays)
+    { chapter: 28, title: "한국의 명절", korean: "-고 나서", romanization: "-go naseo",
+        meaning: "'After doing ~ and then' — emphasizes completion before the next action",
+        usage: "Attaches directly to the verb stem regardless of patchim: 끝나고 나서" },
+    { chapter: 28, title: "한국의 명절", korean: "-(으)ㄹ 줄 알다/모르다", romanization: "-(eu)l jul alda/moreuda",
+        meaning: "'Know how to ~ / don't know how to ~' — ability based on learned skill",
+        usage: "ㄹ 줄 after a vowel-ending stem: 할 줄 알아요; 을 줄 after a consonant-ending stem: 읽을 줄 몰라요" },
+
+    // Ch.29 한국의 예절 (Etiquette)
+    { chapter: 29, title: "한국의 예절", korean: "-(으)ㄹ 수 있다/없다", romanization: "-(eu)l su itda/eopda",
+        meaning: "'Can / cannot ~' — expresses possibility or ability",
+        usage: "ㄹ 수 after a vowel-ending stem: 할 수 있어요; 을 수 after a consonant-ending stem: 먹을 수 없어요" },
+    { chapter: 29, title: "한국의 예절", korean: "-(으)면 안 되다", romanization: "-(eu)myeon an doeda",
+        meaning: "'Must not / should not ~' — prohibition",
+        usage: "면 안 되다 after a vowel-ending stem: 만지면 안 돼요; 으면 안 되다 after a consonant-ending stem: 먹으면 안 돼요" },
+
+    // Ch.30 한국의 대중문화 (Pop Culture)
+    { chapter: 30, title: "한국의 대중문화", korean: "-는/(으)ㄴ 것 같다", romanization: "-neun/(eu)n geot gatda",
+        meaning: "'It seems like / I think that ~' — assumption or guess",
+        usage: "는 것 같다 with verbs (present, any patchim): 가는 것 같다; ㄴ 것 같다 with adjectives + vowel stem: 예쁜 것 같다; 은 것 같다 with adjectives + consonant stem or past verbs: 좋은 것 같다, 먹은 것 같다" },
+    { chapter: 30, title: "한국의 대중문화", korean: "-기 쉽다/어렵다", romanization: "-gi swipda/eoryeopda",
+        meaning: "'Easy to ~ / difficult to ~'",
+        usage: "Attaches directly to the verb stem regardless of patchim: 배우기 쉬워요, 이해하기 어려워요" },
+
+    // ===================== BOOK 2 — 직장생활 한국어 =====================
+
+    // Ch.31 복장과 근무 태도 (Attire & Attitude)
+    { chapter: 31, title: "복장과 근무 태도", korean: "-아/어 보이다", romanization: "-a/eo boida",
+        meaning: "'Looks / seems (adjective)' — describes an outward appearance",
+        usage: "아 보이다 when stem vowel is ㅏ/ㅗ: 좋아 보여요; 어 보이다 otherwise: 피곤해 보여요" },
+    { chapter: 31, title: "복장과 근무 태도", korean: "-게", romanization: "-ge",
+        meaning: "Adverbializer — turns an adjective into an adverb, 'in a ~ way / so that ~'",
+        usage: "Attaches directly to the adjective stem regardless of patchim: 깨끗하게 (cleanly), 예쁘게 (prettily)" },
+
+    // Ch.32 회사 시설 사용 (Using Company Facilities)
+    { chapter: 32, title: "회사 시설 사용", korean: "-잖아요", romanization: "-janayo",
+        meaning: "'~, you know / isn't it ~' — reminds the listener of something already known or obvious",
+        usage: "Attaches directly to the stem regardless of patchim: 바쁘잖아요, 힘들잖아요" },
+    { chapter: 32, title: "회사 시설 사용", korean: "-아/어 놓다", romanization: "-a/eo nota",
+        meaning: "'To do and leave it that way' — an action's result is deliberately left in place",
+        usage: "아 놓다 when stem vowel is ㅏ/ㅗ: 사 놓다 (buy and leave it); 어 놓다 otherwise: 열어 놓다 (leave it open)" },
+
+    // Ch.33 동료와의 관계 (Coworker Relations)
+    { chapter: 33, title: "동료와의 관계", korean: "-는/(으)ㄴ 편이다", romanization: "-neun/(eu)n pyeonida",
+        meaning: "'Tend to be / rather ~' — softens a description as a general tendency",
+        usage: "는 편이다 with verbs: 자주 먹는 편이다; ㄴ 편이다 with adjectives + vowel stem: 큰 편이다; 은 편이다 with adjectives + consonant stem: 많은 편이다" },
+    { chapter: 33, title: "동료와의 관계", korean: "-거든요", romanization: "-geodeunyo",
+        meaning: "'Because, you see ~ / the thing is ~' — gives a reason or new information the listener didn't know",
+        usage: "Attaches directly to the stem regardless of patchim: 바쁘거든요" },
+
+    // Ch.34 성희롱 및 성추행 예방 (Harassment Prevention)
+    { chapter: 34, title: "성희롱 및 성추행 예방", korean: "-던데요", romanization: "-deondeyo",
+        meaning: "'It was ~ (I recall/noticed) ~' — recollection of something the speaker witnessed, with a lingering/background nuance",
+        usage: "Attaches directly to the stem regardless of patchim: 맛있던데요 (It was tasty, as I recall)" },
+    { chapter: 34, title: "성희롱 및 성추행 예방", korean: "-(느)ㄴ다고/다고 하다", romanization: "-(neu)ndago/dago hada",
+        meaning: "Reported speech (statement) — 'says/said that ~'",
+        usage: "는다고 하다 with a consonant-ending verb stem: 먹는다고 해요; ㄴ다고 하다 with a vowel-ending verb stem: 간다고 해요; 다고 하다 with adjectives/이다: 예쁘다고 해요, 학생이라고 해요" },
+
+    // Ch.35 작업장 관리 (Worksite Management)
+    { chapter: 35, title: "작업장 관리", korean: "-(으)ㅂ시다", romanization: "-(eu)bsida",
+        meaning: "'Let's ~' — formal suggestion/proposal",
+        usage: "ㅂ시다 after a vowel-ending stem: 갑시다; 읍시다 after a consonant-ending stem: 먹읍시다" },
+    { chapter: 35, title: "작업장 관리", korean: "-(으)ㄹ", romanization: "-(eu)l",
+        meaning: "Adnominal ending — future/prospective modifier for a following noun",
+        usage: "ㄹ after a vowel-ending stem: 갈 사람; 을 after a consonant-ending stem: 먹을 음식" },
+
+    // Ch.36 출하 관리 (Shipping Management)
+    { chapter: 36, title: "출하 관리", korean: "-(으)ㄴ", romanization: "-(eu)n",
+        meaning: "Adnominal ending — past/completed-action modifier for verbs",
+        usage: "ㄴ after a vowel-ending stem: 간 사람 (the person who went); 은 after a consonant-ending stem: 먹은 음식 (the food that was eaten)" },
+    { chapter: 36, title: "출하 관리", korean: "-겠-", romanization: "-get-",
+        meaning: "Marker of future intention, supposition, or willingness — 'will / seems like / I guess'",
+        usage: "Attaches directly to the stem regardless of patchim: 하겠습니다, 힘들겠어요" },
+
+    // Ch.37 기계 가공 (Machine Processing)
+    { chapter: 37, title: "기계 가공", korean: "-아도/어도", romanization: "-ado/eodo",
+        meaning: "'Even if / even though ~' — concession",
+        usage: "아도 when stem vowel is ㅏ/ㅗ: 가도; 어도 otherwise: 먹어도" },
+    { chapter: 37, title: "기계 가공", korean: "-자고 하다", romanization: "-jago hada",
+        meaning: "Reported speech (suggestion) — 'suggests/suggested that we ~'",
+        usage: "Attaches directly to the verb stem regardless of patchim: 가자고 해요, 먹자고 해요" },
+
+    // Ch.38 기계 조립 (Machine Assembly)
+    { chapter: 38, title: "기계 조립", korean: "-(으)면서", romanization: "-(eu)myeonseo",
+        meaning: "'While doing ~' — two actions performed simultaneously by the same subject",
+        usage: "면서 after a vowel-ending stem: 보면서; 으면서 after a consonant-ending stem: 먹으면서" },
+    { chapter: 38, title: "기계 조립", korean: "-는 중이다", romanization: "-neun jung-ida",
+        meaning: "'In the middle of doing ~' — action currently in progress",
+        usage: "Attaches to the verb stem regardless of patchim: 일하는 중이에요" },
+
+    // Ch.39 금속 가공 (Metal Processing)
+    { chapter: 39, title: "금속 가공", korean: "-(으)라고 하다", romanization: "-(eu)rago hada",
+        meaning: "Reported speech (command) — 'tells/told (someone) to ~'",
+        usage: "라고 하다 after a vowel-ending stem: 가라고 해요; 으라고 하다 after a consonant-ending stem: 먹으라고 해요" },
+    { chapter: 39, title: "금속 가공", korean: "-기 전에", romanization: "-gi jeone",
+        meaning: "'Before doing ~'",
+        usage: "Attaches directly to the verb stem regardless of patchim: 먹기 전에, 가기 전에" },
+
+    // Ch.40 플라스틱 고무 성형 (Plastic/Rubber Molding)
+    { chapter: 40, title: "플라스틱 고무 성형", korean: "-는 대신에", romanization: "-neun daesin-e",
+        meaning: "'Instead of ~ / in place of ~'",
+        usage: "Attaches to the verb stem regardless of patchim: 걷는 대신에 (instead of walking)" },
+    { chapter: 40, title: "플라스틱 고무 성형", korean: "-나/(으)ㄴ가 보다", romanization: "-na/(eu)nga boda",
+        meaning: "'It seems / it looks like ~' — conjecture based on observation",
+        usage: "나 보다 with verbs (any patchim): 가나 보다, 먹나 보다; (으)ㄴ가 보다 with adjectives: 큰가 보다 (vowel), 작은가 보다 (consonant)" },
+
+    // Ch.41 섬유 제조 (Textile Manufacturing)
+    { chapter: 41, title: "섬유 제조", korean: "-거나", romanization: "-geona",
+        meaning: "'Or ~' — connects alternative actions/states",
+        usage: "Attaches directly to the stem regardless of patchim: 자거나 쉬거나 해요" },
+    { chapter: 41, title: "섬유 제조", korean: "-아야/어야", romanization: "-aya/eoya",
+        meaning: "'Only if ~ / must ~' — necessary condition",
+        usage: "아야 when stem vowel is ㅏ/ㅗ: 가야; 어야 otherwise: 먹어야" },
+
+    // Ch.42 가구 제작 (Furniture Making)
+    { chapter: 42, title: "가구 제작", korean: "-(으)ㄹ까 봐", romanization: "-(eu)lkka bwa",
+        meaning: "'Worried/afraid that ~ might happen' — apprehension leading to a precaution",
+        usage: "ㄹ까 봐 after a vowel-ending stem: 갈까 봐 (worried I might go/it might...); 을까 봐 after a consonant-ending stem: 늦을까 봐 (worried I might be late)" },
+    { chapter: 42, title: "가구 제작", korean: "-느냐고/(으)냐고 하다", romanization: "-neunyago/(eu)nyago hada",
+        meaning: "Reported speech (question) — 'asks/asked whether ~'",
+        usage: "느냐고 하다 with verbs: 가느냐고 해요; (으)냐고 하다 with adjectives: 예쁘냐고 해요, 작으냐고 해요" },
+
+    // Ch.43 건축 시공 (Construction)
+    { chapter: 43, title: "건축 시공", korean: "-(으)ㄹ 텐데", romanization: "-(eu)l tende",
+        meaning: "'I expect ~ / it probably will be ~, so ...' — expectation leading into another clause",
+        usage: "ㄹ 텐데 after a vowel-ending stem: 갈 텐데 (I expect I'll go, so...); 을 텐데 after a consonant-ending stem: 먹을 텐데. Note: ㄹ-irregular stems like 힘들다 drop the ㄹ and take ㄹ 텐데: 힘들 텐데" },
+    { chapter: 43, title: "건축 시공", korean: "-(으)ㄹ걸요", romanization: "-(eu)lgeolyo",
+        meaning: "'I bet ~ / I think probably ~' — soft conjecture",
+        usage: "ㄹ걸요 after a vowel-ending stem: 갈걸요; 을걸요 after a consonant-ending stem: 먹을걸요" },
+
+    // Ch.44 토목 시공 (Civil Engineering)
+    { chapter: 44, title: "토목 시공", korean: "-아야겠/어야겠-", romanization: "-ayaget-/eoyaget-",
+        meaning: "'I should / I'd better ~' — the speaker's resolved intention or necessity",
+        usage: "아야겠 when stem vowel is ㅏ/ㅗ: 가야겠어요; 어야겠 otherwise: 먹어야겠어요" },
+    { chapter: 44, title: "토목 시공", korean: "-도록", romanization: "-dorok",
+        meaning: "'So that ~ / until ~' — purpose or extent",
+        usage: "Attaches directly to the verb stem regardless of patchim: 늦지 않도록, 아프도록" },
+
+    // Ch.45 농작물 재배 (Crop Cultivation)
+    { chapter: 45, title: "농작물 재배", korean: "-(으)ㄹ까 하다", romanization: "-(eu)lkka hada",
+        meaning: "'I'm thinking of ~ / considering ~' — tentative plan, not yet decided",
+        usage: "ㄹ까 하다 after a vowel-ending stem: 갈까 해요; 을까 하다 after a consonant-ending stem: 먹을까 해요" },
+    { chapter: 45, title: "농작물 재배", korean: "-지 말고", romanization: "-ji malgo",
+        meaning: "'Instead of doing ~, don't and (do something else)' — negative instruction followed by an alternative",
+        usage: "Attaches directly to the verb stem regardless of patchim: 걱정하지 말고 쉬세요" },
+
+    // Ch.46 사육 관리 (Livestock Management)
+    { chapter: 46, title: "사육 관리", korean: "-(으)ㄴ 적이 있다/없다", romanization: "-(eu)n jeogi itda/eopda",
+        meaning: "'Have/haven't ever done ~' — past experience",
+        usage: "ㄴ 적 after a vowel-ending stem: 간 적이 있어요 (I've been there before); 은 적 after a consonant-ending stem: 먹은 적이 있어요 (I've eaten it before)" },
+    { chapter: 46, title: "사육 관리", korean: "-게 하다", romanization: "-ge hada",
+        meaning: "Causative — 'to make/let someone do ~'",
+        usage: "Attaches directly to the verb/adjective stem regardless of patchim: 청소하게 해요, 쉬게 해요" },
+
+    // Ch.47 연안 어업과 양식 (Fishing & Aquaculture)
+    { chapter: 47, title: "연안 어업과 양식", korean: "-는 동안에", romanization: "-neun dongan-e",
+        meaning: "'While ~ / during ~'",
+        usage: "Attaches to the verb stem regardless of patchim: 일하는 동안에" },
+    { chapter: 47, title: "연안 어업과 양식", korean: "-기로 하다", romanization: "-giro hada",
+        meaning: "'To decide to ~ / to plan to ~'",
+        usage: "Attaches directly to the verb stem regardless of patchim: 만나기로 했어요" },
+
+    // Ch.48 선체 건조 (Shipbuilding)
+    { chapter: 48, title: "선체 건조", korean: "-아지다/어지다", romanization: "-ajida/eojida",
+        meaning: "'To become / to get ~' — indicates a gradual change of state (used with adjectives)",
+        usage: "아지다 when stem vowel is ㅏ/ㅗ: 좋아지다; 어지다 otherwise: 예뻐지다, 추워지다" },
+    { chapter: 48, title: "선체 건조", korean: "-는/(으)ㄴ 덕분에", romanization: "-neun/(eu)n deokbune",
+        meaning: "'Thanks to ~ / because of ~ (positive reason)'",
+        usage: "는 덕분에 with verbs: 도와주는 덕분에; ㄴ/은 덕분에 with adjectives or nouns+인 덕분에 depending on patchim: 좋은 덕분에" },
+
+    // Ch.49 광물 자원 개발 생산 (Mining)
+    { chapter: 49, title: "광물 자원 개발 생산", korean: "-던", romanization: "-deon",
+        meaning: "Retrospective modifier — 'used to (be)/was doing ~' recalling a past, often unfinished or repeated, action/state",
+        usage: "Attaches directly to the stem regardless of patchim: 먹던 음식 (the food I used to eat), 다니던 학교" },
+    { chapter: 49, title: "광물 자원 개발 생산", korean: "-느라고", romanization: "-neurago",
+        meaning: "'Because of doing ~' — the action in this clause caused a negative/unwanted result in the next clause",
+        usage: "Attaches directly to the verb stem regardless of patchim: 일하느라고 못 갔어요" },
+
+    // Ch.50 산림 자원 조성 (Forestry)
+    { chapter: 50, title: "산림 자원 조성", korean: "-다가", romanization: "-daga",
+        meaning: "'While doing ~ (and then switching to another action/state)'",
+        usage: "Attaches directly to the verb stem regardless of patchim: 가다가 (while going, then...)" },
+    { chapter: 50, title: "산림 자원 조성", korean: "간접 인용의 축약형", romanization: "ganjeop inyong-ui chugyakhyeong",
+        meaning: "Contracted (spoken-style) forms of indirect quotation",
+        usage: "-다고 해 → -대 (statement); -냐고 해 → -냬 (question); -라고 해 → -래 (command); -자고 해 → -재 (suggestion). Contraction applies regardless of patchim on the underlying verb." },
+
+    // Ch.51 숙박 서비스 (Hospitality)
+    { chapter: 51, title: "숙박 서비스", korean: "-았다가/었다가", romanization: "-atdaga/eotdaga",
+        meaning: "'Did ~ and then (switched to the opposite/another action)'",
+        usage: "았다가 when stem vowel is ㅏ/ㅗ: 갔다가; 었다가 otherwise: 먹었다가" },
+    { chapter: 51, title: "숙박 서비스", korean: "반말", romanization: "banmal",
+        meaning: "Casual/informal speech (banmal) — used with close friends, younger people, or family",
+        usage: "Drop -요 from polite forms, or use plain-form endings: 가요→가, 먹어요→먹어, 이에요→이야/야(야 after vowel, 이야 after patchim)" },
+
+    // Ch.52 음식 조리 (Food Preparation)
+    { chapter: 52, title: "음식 조리", korean: "-았어야/었어야 했는데", romanization: "-asseoya/eosseoya haenneunde",
+        meaning: "'Should have done ~ (but didn't)' — regret about a past unrealized action",
+        usage: "았어야 when stem vowel is ㅏ/ㅗ: 갔어야 했는데; 었어야 otherwise: 먹었어야 했는데" },
+    { chapter: 52, title: "음식 조리", korean: "-(으)ㄴ 지", romanization: "-(eu)n ji",
+        meaning: "'Since ~ / how long it has been since ~' — elapsed time after a past event (used with 되다/지나다)",
+        usage: "ㄴ 지 after a vowel-ending stem: 산 지 (since I lived); 은 지 after a consonant-ending stem: 먹은 지" },
+
+    // Ch.53 산업 안전 및 보건 표지 (Safety Signs)
+    { chapter: 53, title: "산업 안전 및 보건 표지", korean: "-았더니/었더니", romanization: "-atdeoni/eotdeoni",
+        meaning: "'And then / because I did ~' — a past action by the speaker led to a newly discovered result",
+        usage: "았더니 when stem vowel is ㅏ/ㅗ: 갔더니; 었더니 otherwise: 먹었더니" },
+    { chapter: 53, title: "산업 안전 및 보건 표지", korean: "-아/어 있다", romanization: "-a/eo itda",
+        meaning: "'To be in a state resulting from an action' (used with intransitive change-of-state verbs)",
+        usage: "아 있다 when stem vowel is ㅏ/ㅗ: 앉아 있다; 어 있다 otherwise: 서 있다, 걸려 있다" },
+
+    // Ch.54 산업 안전 및 보건 수칙 (Safety Rules)
+    { chapter: 54, title: "산업 안전 및 보건 수칙", korean: "-도록 하다", romanization: "-dorok hada",
+        meaning: "'To make sure to ~ / to try to ~' — instruction or intention to ensure something happens",
+        usage: "Attaches directly to the verb stem regardless of patchim: 늦지 않도록 하세요" },
+    { chapter: 54, title: "산업 안전 및 보건 수칙", korean: "-기 위해", romanization: "-gi wihae",
+        meaning: "'In order to ~'",
+        usage: "Attaches directly to the verb stem regardless of patchim: 건강을 위해, 살기 위해" },
+
+    // Ch.55 산업 안전 위생 장비 (Safety Equipment)
+    { chapter: 55, title: "산업 안전 위생 장비", korean: "-는 대로", romanization: "-neun daero",
+        meaning: "'As soon as ~ / according to ~ / just as ~'",
+        usage: "Attaches to the verb stem regardless of patchim: 도착하는 대로 (as soon as I arrive)" },
+    { chapter: 55, title: "산업 안전 위생 장비", korean: "-(으)ㄹ 테니까", romanization: "-(eu)l tenikka",
+        meaning: "'Since I will ~ / because it will ~, (so do something)'",
+        usage: "ㄹ 테니까 after a vowel-ending stem: 할 테니까; 을 테니까 after a consonant-ending stem: 먹을 테니까" },
+
+    // Ch.56 산업 재해 및 응급 처치 (Emergency Response)
+    { chapter: 56, title: "산업 재해 및 응급 처치", korean: "-(으)ㄹ 뻔하다", romanization: "-(eu)l ppeonhada",
+        meaning: "'Almost did ~ / nearly happened' — a bad event that was narrowly avoided",
+        usage: "ㄹ 뻔하다 after a vowel-ending stem: 다칠 뻔했어요 (I almost got hurt); 을 뻔하다 after a consonant-ending stem: 늦을 뻔했어요 (I almost was late)" },
+    { chapter: 56, title: "산업 재해 및 응급 처치", korean: "-자마자", romanization: "-jamaja",
+        meaning: "'As soon as ~ / immediately after ~'",
+        usage: "Attaches directly to the verb stem regardless of patchim: 도착하자마자, 먹자마자" },
+
+    // Ch.57 고용허가제 (Employment Permit System)
+    { chapter: 57, title: "고용허가제", korean: "-는/(으)ㄴ 줄 알았다/몰랐다", romanization: "-neun/(eu)n jul arassda/mollassda",
+        meaning: "'Thought that ~ (was the case) / didn't know that ~ (was the case)' — mistaken or unrecognized belief",
+        usage: "는 줄 with verbs (present, any patchim): 가는 줄 알았어요; ㄴ/은 줄 with adjectives or past verbs: 비싼 줄 알았어요 (vowel), 좋은 줄 몰랐어요 (consonant)" },
+    { chapter: 57, title: "고용허가제", korean: "-게 되다", romanization: "-ge doeda",
+        meaning: "'To end up (doing) / to come to (do) / to eventually become (a situation where ~)'",
+        usage: "Attaches directly to the verb/adjective stem regardless of patchim: 알게 되다, 좋아하게 되다" },
+
+    // Ch.58 근로기준법 (Labor Standards Act)
+    { chapter: 58, title: "근로기준법", korean: "뿐만 아니라", romanization: "ppunman anira",
+        meaning: "'Not only ~ but also ~'",
+        usage: "Follows a noun or the -(으)ㄹ 뿐만 아니라 clause form; no patchim distinction for the noun form: 월급뿐만 아니라" },
+    { chapter: 58, title: "근로기준법", korean: "-(으)면 좋겠다", romanization: "-(eu)myeon jokhetda",
+        meaning: "'I wish / I hope / it would be nice if ~'",
+        usage: "면 좋겠다 after a vowel-ending stem: 쉬면 좋겠어요; 으면 좋겠다 after a consonant-ending stem: 늘었으면 좋겠어요" },
+
+    // Ch.59 출입국관리법 (Immigration Law)
+    { chapter: 59, title: "출입국관리법", korean: "-더라도", romanization: "-deorado",
+        meaning: "'Even if / even though ~ / regardless of ~' — stronger concession than -아도/어도",
+        usage: "Attaches directly to the stem regardless of patchim: 힘들더라도, 늦더라도" },
+    { chapter: 59, title: "출입국관리법", korean: "-는지/(으)ㄴ지", romanization: "-neunji/(eu)nji",
+        meaning: "'Whether ~ / if ~' — indirect question expressing uncertainty",
+        usage: "는지 with verbs (any patchim): 가는지, 먹는지; ㄴ지/은지 with adjectives: 큰지 (vowel), 작은지 (consonant)" },
+
+    // Ch.60 근로자 보험 (Worker Insurance)
+    { chapter: 60, title: "근로자 보험", korean: "-는 바람에", romanization: "-neun barame",
+        meaning: "'Because of ~ / due to ~' — used when an action causes an unexpected or negative result",
+        usage: "Attaches to the verb stem regardless of patchim: 늦잠을 자는 바람에 (because I overslept)" },
+    { chapter: 60, title: "근로자 보험", korean: "-(으)려면", romanization: "-(eu)ryeomyeon",
+        meaning: "'If you want to / if you intend to ~, (then...)' — states a condition for achieving a goal",
+        usage: "려면 after a vowel-ending stem: 가려면; 으려면 after a consonant-ending stem: 먹으려면" },
     ],
 
     "Classifiers (Native)": [

@@ -295,6 +295,31 @@ body.dark-mode #category-search::placeholder {
     color: #555;
 }
 
+/* Usage Section (for Grammar Rules cards - shows patchim/vowel-harmony rule etc.) */
+.usage-section {
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 2px solid #e0e0e0;
+    text-align: left;
+}
+
+.usage-section h3 {
+    font-size: 1.1em;
+    color: #667eea;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.usage-text {
+    background: #f8f9fa;
+    padding: 14px 16px;
+    border-radius: 8px;
+    border-left: 3px solid #667eea;
+    font-size: 0.95em;
+    color: #444;
+    line-height: 1.6;
+}
+
 /* Breakdown Section for Reading Practice */
 .breakdown-section {
     margin-top: 25px;
@@ -571,6 +596,20 @@ body.dark-mode .card-back .meaning {
     color: #b0b0b0;
 }
 
+body.dark-mode .usage-section {
+    border-top-color: #444;
+}
+
+body.dark-mode .usage-section h3 {
+    color: #8b9cff;
+}
+
+body.dark-mode .usage-text {
+    background: #1a1a2e;
+    border-left-color: #8b9cff;
+    color: #b0b0b0;
+}
+
 body.dark-mode .breakdown-section {
     border-top-color: #444;
 }
@@ -732,6 +771,15 @@ body.dark-mode #dark-mode-toggle:hover {
 
     .breakdown-meaning {
         font-size: 0.8em;
+    }
+
+    .usage-section h3 {
+        font-size: 1em;
+    }
+
+    .usage-text {
+        font-size: 0.85em;
+        padding: 12px;
     }
 
     .category-label {

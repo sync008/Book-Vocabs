@@ -122,7 +122,18 @@ let selectedCategories = []; // Array of selected category names
 
         
     ];
-``
+
+// FRIENDLY DISPLAY NAMES FOR CATEGORY KEYS THAT AREN'T ALREADY HUMAN-READABLE
+// (the button will show the mapped label, but everything else still keys off the
+// real property name in flashcardData)
+const categoryDisplayNames = {
+    "grammarRules": "Grammar Rules (Ch. 1-60)"
+};
+
+function getCategoryLabel(categoryName) {
+    return categoryDisplayNames[categoryName] || categoryName;
+}
+
 // GET REFERENCES TO HTML ELEMENTS
 const categoryContainer = document.getElementById('category-container');
 const categoryButtonsDiv = document.getElementById('category-buttons');
@@ -163,7 +174,7 @@ function createCategoryButtons() {
     for (let categoryName in flashcardData) {
         const button = document.createElement('button');
         button.className = 'category-btn';
-        button.textContent = categoryName;
+        button.textContent = getCategoryLabel(categoryName);
         button.dataset.category = categoryName;
 
         if (memorizedCategories.includes(categoryName)) {
@@ -296,7 +307,7 @@ function loadCategory(categoryName) {
     isFlipped = false;
     
     // Display current category
-    currentCategoryDisplay.innerHTML = `<div class="category-label">Category: ${categoryName}</div>`;
+    currentCategoryDisplay.innerHTML = `<div class="category-label">Category: ${getCategoryLabel(categoryName)}</div>`;
     
     categoryContainer.classList.add('hidden');
     flashcardArea.classList.remove('hidden');
@@ -314,7 +325,7 @@ function loadMultipleCategories(categories) {
         if (flashcardData[categoryName]) {
             const categorizedCards = flashcardData[categoryName].map(card => ({
                 ...card,
-                sourceCategory: categoryName
+                sourceCategory: getCategoryLabel(categoryName)
             }));
             currentCards = currentCards.concat(categorizedCards);
         }
@@ -327,7 +338,7 @@ function loadMultipleCategories(categories) {
     isFlipped = false;
     
     // Display selected categories
-    const categoryList = categories.join(', ');
+    const categoryList = categories.map(getCategoryLabel).join(', ');
     currentCategoryDisplay.innerHTML = `
         <div class="category-label">
             <strong>Combined Categories (${categories.length}):</strong><br>
@@ -380,7 +391,28 @@ function displayCard() {
             
             breakdownHTML += '</div></div>';
         }
-        
+
+        // Grammar-rule cards (from the "grammarRules" category) carry a "usage" field
+        // that spells out which allomorph/form to use and when (patchim, vowel
+        // harmony, etc.) — show it as its own labeled section on the card back.
+        let usageHTML = '';
+        if (card.usage) {
+            usageHTML = `
+                <div class="usage-section">
+                    <h3>Usage:</h3>
+                    <div class="usage-text">${card.usage}</div>
+                </div>
+            `;
+        }
+
+        // Grammar-rule cards also carry chapter/title metadata - show it as a small
+        // badge above the Korean text, the same way multi-category mode shows
+        // "From: <category>".
+        let chapterBadgeHTML = '';
+        if (card.chapter !== undefined && card.title) {
+            chapterBadgeHTML = `<div class="source-category">Ch. ${card.chapter} — ${card.title}</div>`;
+        }
+
         // Show source category if from multi-category mode
         let sourceCategoryHTML = '';
         if (card.sourceCategory) {
@@ -391,9 +423,11 @@ function displayCard() {
         cardContent.innerHTML = `
             <div class="card-back">
                 ${sourceCategoryHTML}
+                ${chapterBadgeHTML}
                 <div class="korean">${spokenText}</div>
                 <div class="romanization">${card.romanization}</div>
                 <div class="meaning">${card.meaning}</div>
+                ${usageHTML}
                 ${breakdownHTML}
                 <button class="mark-hard-btn" id="mark-hard-btn">🔴 Mark as Hard</button>
             </div>
