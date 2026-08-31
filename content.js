@@ -3200,7 +3200,6 @@ Object.assign(flashcardData, {
         { korean: "토트랙을 벗어나지 마시오", romanization: "toteuraek-eul beoseonaji masio", meaning: "Do not leave the tow-track" },
     ],
 
-
     "Chapter 54.1 (Safety and Health Preservation Regulations)": [
         { korean: "흡연이나 음식물 섭취를 하지 않다", romanization: "heubyeoni-na eumsigmul seopchwireul haji anta", meaning: "to not smoke or eat" },
         { korean: "환기 장치를 켜다", romanization: "hwangi jangchireul kyeoda", meaning: "to turn on the ventilation system" },
