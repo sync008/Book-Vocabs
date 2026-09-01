@@ -715,5 +715,12 @@ document.addEventListener('keydown', function(e) {
     } else if (e.key === 'ArrowUp') {
         e.preventDefault();
         shuffleBtn.click(); // same action as clicking Shuffle
+    } else if (e.key === ' ' || e.key === 'Spacebar') {
+        e.preventDefault(); // stop page from scrolling
+
+        const markHardBtn = document.getElementById('mark-hard-btn');
+        if (markHardBtn && !markHardBtn.disabled) {
+            markHardBtn.click(); // same action as clicking "Mark as Hard"
+        }
     }
 });
