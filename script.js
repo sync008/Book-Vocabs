@@ -712,10 +712,12 @@ document.addEventListener('keydown', function(e) {
     } else if (e.key === 'ArrowDown') {
         e.preventDefault();
         flashcard.click(); // same action as clicking the card to flip it
-    } else if (e.key === 'ArrowUp') {
-        e.preventDefault();
-        shuffleBtn.click(); // same action as clicking Shuffle
-    } else if (e.key === ' ' || e.key === 'Spacebar') {
+    } 
+    // else if (e.key === 'ArrowUp') {
+    //     e.preventDefault();
+    //     shuffleBtn.click(); // same action as clicking Shuffle
+    // }
+     else if (e.key === ' ' || e.key === 'Spacebar') {
         e.preventDefault(); // stop page from scrolling
 
         const markHardBtn = document.getElementById('mark-hard-btn');
