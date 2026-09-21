@@ -426,6 +426,24 @@ function displayCard() {
             `;
         }
 
+        // Interview cards (from the "Interview (EPS-TOPIK Skills Test)" category)
+        // may carry an optional "answer" field — a model response to the question
+        // on the front. It is shown as text only; it is NEVER auto-spoken. If the
+        // user wants to hear it, they can press the "Replay Answer" button, which
+        // calls speakKorean() manually.
+        let answerHTML = '';
+        if (card.answer) {
+            answerHTML = `
+                <div class="answer-section">
+                    <h3>Sample Answer:</h3>
+                    <div class="answer-korean">${card.answer}</div>
+                    ${card.answerRomanization ? `<div class="answer-romanization">${card.answerRomanization}</div>` : ''}
+                    ${card.answerMeaning ? `<div class="answer-meaning">${card.answerMeaning}</div>` : ''}
+                    <button class="replay-btn" id="replay-answer-btn">🔊 Play Answer</button>
+                </div>
+            `;
+        }
+
         // Grammar-rule cards also carry chapter/title metadata - show it as a small
         // badge above the Korean text, the same way multi-category mode shows
         // "From: <category>".
@@ -449,6 +467,7 @@ function displayCard() {
                 <div class="romanization">${card.romanization}</div>
                 <div class="meaning">${card.meaning}</div>
                 ${usageHTML}
+                ${answerHTML}
                 ${breakdownHTML}
                 <button class="mark-hard-btn" id="mark-hard-btn">🔴 Mark as Hard</button>
             </div>
@@ -470,8 +489,19 @@ function displayCard() {
                 this.disabled = true;
             });
         }
+
+        // Attach the "Play Answer" button - this is the ONLY way the answer
+        // text gets spoken. It is never triggered automatically.
+        const replayBtn = document.getElementById('replay-answer-btn');
+        if (replayBtn) {
+            replayBtn.addEventListener('click', function(e) {
+                e.stopPropagation(); // Don't flip the card
+                speakKorean(card.answer);
+            });
+        }
         
-        // Speak the Korean text
+        // Speak the Korean text on the front/question only - the answer
+        // (if present) is intentionally NOT included here.
         speakKorean(spokenText);
     } else {
         // Show FRONT of card

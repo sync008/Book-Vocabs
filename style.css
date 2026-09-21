@@ -963,3 +963,51 @@ body.dark-mode .mark-hard-btn:hover:not(:disabled) {
     background: #fc8181;
     color: #1a1a2e;
 }
+
+.answer-section {
+    margin-top: 18px;
+    padding: 14px 16px;
+    border-left: 4px solid #4a90d9;
+    background: rgba(74, 144, 217, 0.08);
+    border-radius: 6px;
+    text-align: left;
+}
+
+.answer-section h3 {
+    margin: 0 0 8px 0;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    opacity: 0.7;
+}
+
+.answer-korean {
+    font-size: 1.15rem;
+    line-height: 1.6;
+    margin-bottom: 6px;
+}
+
+.answer-romanization {
+    font-style: italic;
+    opacity: 0.75;
+    margin-bottom: 6px;
+}
+
+.answer-meaning {
+    opacity: 0.9;
+}
+
+.replay-btn {
+    margin-top: 10px;
+    padding: 6px 12px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    border-radius: 6px;
+    border: 1px solid #4a90d9;
+    background: transparent;
+    color: inherit;
+}
+
+body.dark-mode .answer-section {
+    background: rgba(74, 144, 217, 0.15);
+}
